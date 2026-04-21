@@ -6,26 +6,23 @@ import { ABOUT_DATA } from '../data/portfolio';
 export default function About() {
   const { title, highlight, descriptionLine1, bio, stats, skills } = ABOUT_DATA;
 
-
   const headerRef = useScrollReveal();
   const leftRef = useScrollReveal();
   const rightRef = useScrollReveal();
 
   return (
-    <section id="about" className="relative py-20 overflow-hidden">
+    <section id="about" className="relative pt-20 pb-32 overflow-hidden">
       <div className="absolute top-0 right-0 w-[300px] h-[300px] rounded-full bg-white/[0.015] blur-[100px] pointer-events-none" />
 
       <div className="section-container">
         <div ref={headerRef} className="reveal">
           <SectionHeader title={title} highlight={highlight} />
-
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-10 items-start">
-          {/* Left: Image + Stats — 2 columns */}
+        <div className="grid lg:grid-cols-5 gap-10 items-center">
+          {/* Left: Image + Stats */}
           <div ref={leftRef} className="reveal-left lg:col-span-2">
-            {/* Profile image */}
-            <div className="rounded-2xl overflow-hidden border border-white/10 aspect-[3/4] relative">
+            <div className="rounded-2xl overflow-hidden border border-white/10 aspect-square relative">
               <div className="img-placeholder w-full h-full flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-20 h-20 mx-auto rounded-full border-2 border-white/15 flex items-center justify-center mb-3">
@@ -55,21 +52,27 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right: Content — 3 columns */}
+          {/* Right: Content */}
           <div ref={rightRef} className="reveal-right lg:col-span-3">
             <h3 className="text-xl font-semibold mb-4 leading-snug">
-              {descriptionLine1.split(' ').map((word, i) => 
+              {descriptionLine1.split(' ').map((word, i) =>
                 i === descriptionLine1.split(' ').length - 1 ? <span key={i} className="text-white/50">{word}</span> : word + ' '
               )}
             </h3>
             {bio.map((paragraph, i) => (
-              <p key={i} className={`text-[14px] text-white/45 leading-relaxed ${i === bio.length - 1 ? 'mb-6' : 'mb-3'}`}>
+              <p key={i} className={`text-[14px] text-white/45 leading-relaxed ${i === bio.length - 1 ? 'mb-12' : 'mb-3'}`}>
                 {paragraph}
               </p>
             ))}
 
+
             {/* Skills */}
-            <div className="grid grid-cols-2 gap-3">
+            <div style={{ marginTop: '15px', paddingTop: '32px', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+              <h4 className="text-[10px] font-mono text-white/30 uppercase tracking-[0.3em] mb-5 flex items-center gap-3">
+                <span className="w-6 h-px bg-white/10" />
+                Technical Skills
+              </h4>
+              <div className="grid grid-cols-2 gap-3">
               {skills.map((skill) => (
                 <div key={skill.title} className="card-base p-4">
                   <div className="flex items-center gap-2.5 mb-1.5">
@@ -81,6 +84,7 @@ export default function About() {
                   <p className="text-[12px] text-white/35 leading-relaxed">{skill.desc}</p>
                 </div>
               ))}
+              </div>
             </div>
           </div>
         </div>
@@ -88,5 +92,3 @@ export default function About() {
     </section>
   );
 }
-
-

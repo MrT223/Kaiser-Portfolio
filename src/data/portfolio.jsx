@@ -10,25 +10,26 @@ export const NAV_LINKS = [
 export const HERO_DATA = {
   greeting: "Xin chào, tôi là",
   name: "Bùi Minh Tín",
-  title: "Software Engineer",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Crafting digital experiences with clean code & modern design.",
-  techStack: ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'Docker'],
+  title: "Data & Backend Developer",
+  description: "Sinh viên năm 3 tại trường Đại học Sư phạm TP.HCM (HCMUE). Chuyên sâu về mảng Dữ liệu và phát triển hệ thống Backend.",
+  techStack: ['Python', 'Node.js', 'SQL', 'PostgreSQL', 'Java', 'Docker'],
 };
 
 export const ABOUT_DATA = {
   title: "Về",
 
   highlight: "bản thân tôi",
-  descriptionLine1: "Đam mê tạo ra những sản phẩm xuất sắc",
+  descriptionLine1: "Sinh viên năm 3 chuyên ngành CNTT tại HCMUE",
   bio: [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+    "Tôi hiện là sinh viên năm 3 tại trường Đại học Sư phạm TP.HCM (HCMUE). Với niềm đam mê lớn dành cho mảng Dữ liệu và Backend, tôi luôn nỗ lực học hỏi để xây dựng các hệ thống ổn định và xử lý dữ liệu hiệu quả.",
+    "Tôi đang tìm kiếm các cơ hội thực tập và dự án thực tế để áp dụng những kiến thức đã học vào môi trường chuyên nghiệp."
   ],
   stats: [
-    { label: "Năm KN", value: "3+" },
-    { label: "Dự án", value: "20+" },
-    { label: "Khách hàng", value: "10+" },
+    { label: "Năm học", value: "Năm 3" },
+    { label: "Dự án", value: "10+" },
+    { label: "Kỹ năng", value: "15+" },
   ],
+
   skills: [
     { 
       title: 'Frontend', 
