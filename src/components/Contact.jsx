@@ -15,26 +15,6 @@ const CONTACT_INFO = [
   { label: 'Vị trí', value: 'TP. Hồ Chí Minh, Việt Nam', href: null, icon: <><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></> },
 ];
 
-function ContactInfoItem({ item }) {
-  const Tag = item.href ? 'a' : 'div';
-  return (
-    <Tag
-      {...(item.href ? { href: item.href } : {})}
-      className={`group flex items-center gap-3 p-3.5 rounded-xl card-base ${item.href ? 'hover:border-white/15' : ''}`}
-    >
-      <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/8 flex items-center justify-center shrink-0 group-hover:border-white/20 transition-all duration-300">
-        <svg className="w-4 h-4 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          {item.icon}
-        </svg>
-      </div>
-      <div>
-        <div className="text-[11px] text-white/40">{item.label}</div>
-        <div className="text-sm font-medium">{item.value}</div>
-      </div>
-    </Tag>
-  );
-}
-
 function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -45,31 +25,29 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="card-base p-6 space-y-5">
+    <form onSubmit={handleSubmit} className="card-base p-6 space-y-4">
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="name" className="block text-xs text-white/40 mb-1.5">Họ và tên</label>
-          <input type="text" id="name" placeholder="Nguyễn Văn B" className="w-full px-4 py-2.5 text-sm rounded-xl" />
+          <label htmlFor="name" className="block text-[12px] text-white/40 mb-1.5">Họ và tên</label>
+          <input type="text" id="name" placeholder="Nguyễn Văn B" className="w-full px-4 py-2.5 text-[14px]" />
         </div>
         <div>
-          <label htmlFor="email" className="block text-xs text-white/40 mb-1.5">Email</label>
-          <input type="email" id="email" placeholder="email@example.com" className="w-full px-4 py-2.5 text-sm rounded-xl" />
+          <label htmlFor="email" className="block text-[12px] text-white/40 mb-1.5">Email</label>
+          <input type="email" id="email" placeholder="email@example.com" className="w-full px-4 py-2.5 text-[14px]" />
         </div>
       </div>
       <div>
-        <label htmlFor="subject" className="block text-xs text-white/40 mb-1.5">Chủ đề</label>
-        <input type="text" id="subject" placeholder="Tôi muốn hợp tác..." className="w-full px-4 py-2.5 text-sm rounded-xl" />
+        <label htmlFor="subject" className="block text-[12px] text-white/40 mb-1.5">Chủ đề</label>
+        <input type="text" id="subject" placeholder="Tôi muốn hợp tác..." className="w-full px-4 py-2.5 text-[14px]" />
       </div>
       <div>
-        <label htmlFor="message" className="block text-xs text-white/40 mb-1.5">Nội dung</label>
-        <textarea id="message" rows={4} placeholder="Nội dung tin nhắn..." className="w-full px-4 py-2.5 text-sm rounded-xl resize-none" />
+        <label htmlFor="message" className="block text-[12px] text-white/40 mb-1.5">Nội dung</label>
+        <textarea id="message" rows={4} placeholder="Nội dung tin nhắn..." className="w-full px-4 py-2.5 text-[14px] resize-none" />
       </div>
       <button
         type="submit"
-        className={`w-full py-3 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
-          submitted
-            ? 'bg-emerald-500 text-white'
-            : 'bg-white text-black hover:shadow-[0_0_25px_rgba(255,255,255,0.2)]'
+        className={`w-full py-3 rounded-xl font-semibold text-[14px] transition-all duration-300 cursor-pointer ${
+          submitted ? 'bg-emerald-500 text-white' : 'bg-white text-black hover:shadow-[0_0_25px_rgba(255,255,255,0.2)]'
         }`}
       >
         {submitted ? 'Đã gửi! ✓' : 'Gửi tin nhắn'}
@@ -84,42 +62,47 @@ export default function Contact() {
   const formRef = useScrollReveal();
 
   return (
-    <section id="contact" className="relative py-24 overflow-hidden">
+    <section id="contact" className="relative py-20 overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-white/[0.015] blur-[120px] pointer-events-none" />
 
       <div className="section-container">
         <div ref={headerRef} className="reveal">
-          <SectionHeader
-            badge="Liên hệ"
-            title="Hãy"
-            highlight="kết nối với tôi"
-            description="Luôn sẵn sàng cho những cơ hội hợp tác mới."
-          />
+          <SectionHeader badge="Liên hệ" title="Hãy" highlight="kết nối với tôi" description="Luôn sẵn sàng cho những cơ hội hợp tác mới." />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-10">
           {/* Info */}
           <div ref={infoRef} className="reveal-left">
             <h3 className="text-lg font-semibold mb-3">Thông tin liên hệ</h3>
-            <p className="text-sm text-white/35 leading-relaxed mb-6">
-              Hãy liên hệ qua bất kỳ kênh nào bên dưới. Tôi sẽ phản hồi trong thời gian sớm nhất.
+            <p className="text-[14px] text-white/35 leading-relaxed mb-6">
+              Hãy liên hệ qua bất kỳ kênh nào bên dưới.
             </p>
 
-            <div className="space-y-3 mb-6">
-              {CONTACT_INFO.map((item) => (
-                <ContactInfoItem key={item.label} item={item} />
-              ))}
+            <div className="flex flex-col gap-3 mb-6">
+              {CONTACT_INFO.map((item) => {
+                const Tag = item.href ? 'a' : 'div';
+                return (
+                  <Tag
+                    key={item.label}
+                    {...(item.href ? { href: item.href } : {})}
+                    className="group flex items-center gap-3 p-3.5 rounded-xl card-base"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/[0.08] flex items-center justify-center shrink-0 group-hover:border-white/20 transition-all">
+                      <svg className="w-4 h-4 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">{item.icon}</svg>
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-[11px] text-white/40">{item.label}</div>
+                      <div className="text-[14px] font-medium truncate">{item.value}</div>
+                    </div>
+                  </Tag>
+                );
+              })}
             </div>
 
             {/* Social */}
             <div className="flex items-center gap-3">
               {SOCIAL_LINKS.map((s) => (
-                <a
-                  key={s.label}
-                  href="#"
-                  className="w-9 h-9 rounded-full border border-white/8 flex items-center justify-center hover:border-white/25 hover:bg-white/5 transition-all duration-300"
-                  aria-label={s.label}
-                >
+                <a key={s.label} href="#" className="w-9 h-9 rounded-full border border-white/[0.08] flex items-center justify-center hover:border-white/25 hover:bg-white/5 transition-all duration-300" aria-label={s.label}>
                   <svg className="w-4 h-4 text-white/60" fill="currentColor" viewBox="0 0 24 24">{s.icon}</svg>
                 </a>
               ))}

@@ -22,6 +22,18 @@ body {
   line-height: 1.6;
 }
 
+/* Prevent fixed header from covering section anchors */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Prevent text overflow in all cards and containers */
+.card-base,
+.section-container {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 /* ============================================= */
 /* CUSTOM SCROLLBAR                              */
 /* ============================================= */

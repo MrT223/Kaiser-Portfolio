@@ -2,31 +2,10 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 import SectionHeader from './SectionHeader';
 
 const SKILLS = [
-  {
-    title: 'Frontend',
-    desc: 'React, Vue, Next.js, TailwindCSS',
-    icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />,
-  },
-  {
-    title: 'Backend',
-    desc: 'Node.js, Python, Express, FastAPI',
-    icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" />,
-  },
-  {
-    title: 'Database',
-    desc: 'PostgreSQL, MongoDB, Redis',
-    icon: (
-      <>
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-3-3v6" />
-      </>
-    ),
-  },
-  {
-    title: 'DevOps',
-    desc: 'Docker, CI/CD, AWS, Linux',
-    icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />,
-  },
+  { title: 'Frontend', desc: 'React, Vue, Next.js, TailwindCSS', icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /> },
+  { title: 'Backend', desc: 'Node.js, Python, Express, FastAPI', icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" /> },
+  { title: 'Database', desc: 'PostgreSQL, MongoDB, Redis', icon: <><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-3-3v6" /></> },
+  { title: 'DevOps', desc: 'Docker, CI/CD, AWS, Linux', icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" /> },
 ];
 
 export default function About() {
@@ -35,8 +14,7 @@ export default function About() {
   const rightRef = useScrollReveal();
 
   return (
-    <section id="about" className="relative py-24 overflow-hidden">
-      {/* Glow */}
+    <section id="about" className="relative py-20 overflow-hidden">
       <div className="absolute top-0 right-0 w-[300px] h-[300px] rounded-full bg-white/[0.015] blur-[100px] pointer-events-none" />
 
       <div className="section-container">
@@ -44,76 +22,68 @@ export default function About() {
           <SectionHeader badge="Giới thiệu" title="Về" highlight="bản thân tôi" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Left: Image + Stats */}
-          <div ref={leftRef} className="reveal-left">
-            <div className="relative">
-              {/* Profile image placeholder */}
-              <div className="rounded-2xl overflow-hidden border border-white/10 aspect-square max-w-[420px] mx-auto">
-                <div className="img-placeholder w-full h-full flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-24 h-24 mx-auto rounded-full border-2 border-white/15 flex items-center justify-center mb-3">
-                      <svg className="w-12 h-12 text-white/20" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                      </svg>
-                    </div>
-                    <p className="text-white/25 text-xs font-mono">your-photo.jpg</p>
+        <div className="grid lg:grid-cols-5 gap-10 items-start">
+          {/* Left: Image + Stats — 2 columns */}
+          <div ref={leftRef} className="reveal-left lg:col-span-2">
+            {/* Profile image */}
+            <div className="rounded-2xl overflow-hidden border border-white/10 aspect-[3/4] relative">
+              <div className="img-placeholder w-full h-full flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-20 h-20 mx-auto rounded-full border-2 border-white/15 flex items-center justify-center mb-3">
+                    <svg className="w-10 h-10 text-white/20" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                    </svg>
                   </div>
+                  <p className="text-white/25 text-xs font-mono">your-photo.jpg</p>
                 </div>
-                {/* Bottom gradient */}
-                <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
               </div>
+              <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
+            </div>
 
-              {/* Stats card — below image, not overlapping */}
-              <div className="mt-6 p-4 rounded-xl bg-[#141414] border border-white/8 max-w-[420px] mx-auto">
-                <div className="flex items-center justify-around">
-                  <div className="text-center">
-                    <div className="text-xl font-bold">3+</div>
-                    <div className="text-[11px] text-white/40 mt-0.5">Năm KN</div>
-                  </div>
-                  <div className="w-px h-8 bg-white/10" />
-                  <div className="text-center">
-                    <div className="text-xl font-bold">20+</div>
-                    <div className="text-[11px] text-white/40 mt-0.5">Dự án</div>
-                  </div>
-                  <div className="w-px h-8 bg-white/10" />
-                  <div className="text-center">
-                    <div className="text-xl font-bold">10+</div>
-                    <div className="text-[11px] text-white/40 mt-0.5">Khách hàng</div>
-                  </div>
+            {/* Stats */}
+            <div className="mt-4 p-4 rounded-xl bg-[#141414] border border-white/[0.08]">
+              <div className="flex items-center justify-around text-center">
+                <div>
+                  <div className="text-xl font-bold">3+</div>
+                  <div className="text-[11px] text-white/40">Năm KN</div>
+                </div>
+                <div className="w-px h-8 bg-white/10" />
+                <div>
+                  <div className="text-xl font-bold">20+</div>
+                  <div className="text-[11px] text-white/40">Dự án</div>
+                </div>
+                <div className="w-px h-8 bg-white/10" />
+                <div>
+                  <div className="text-xl font-bold">10+</div>
+                  <div className="text-[11px] text-white/40">Khách hàng</div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right: Content */}
-          <div ref={rightRef} className="reveal-right">
-            <h3 className="text-xl font-semibold mb-4">
+          {/* Right: Content — 3 columns */}
+          <div ref={rightRef} className="reveal-right lg:col-span-3">
+            <h3 className="text-xl font-semibold mb-4 leading-snug">
               Đam mê tạo ra những sản phẩm <span className="text-white/50">xuất sắc</span>
             </h3>
-            <p className="text-sm text-white/45 leading-relaxed mb-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <p className="text-[14px] text-white/45 leading-relaxed mb-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
             </p>
-            <p className="text-sm text-white/45 leading-relaxed mb-6">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p className="text-[14px] text-white/45 leading-relaxed mb-6">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
             </p>
 
-            {/* Skills grid */}
+            {/* Skills */}
             <div className="grid grid-cols-2 gap-3">
               {SKILLS.map((skill) => (
-                <div
-                  key={skill.title}
-                  className="card-base p-3.5 hover:border-white/15"
-                >
+                <div key={skill.title} className="card-base p-4">
                   <div className="flex items-center gap-2.5 mb-1.5">
-                    <div className="w-7 h-7 rounded-lg bg-white/8 flex items-center justify-center shrink-0">
-                      <svg className="w-3.5 h-3.5 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        {skill.icon}
-                      </svg>
+                    <div className="w-7 h-7 rounded-lg bg-white/[0.08] flex items-center justify-center shrink-0">
+                      <svg className="w-3.5 h-3.5 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">{skill.icon}</svg>
                     </div>
-                    <span className="font-medium text-sm">{skill.title}</span>
+                    <span className="font-medium text-[13px]">{skill.title}</span>
                   </div>
-                  <p className="text-[11px] text-white/35 leading-relaxed">{skill.desc}</p>
+                  <p className="text-[12px] text-white/35 leading-relaxed">{skill.desc}</p>
                 </div>
               ))}
             </div>
