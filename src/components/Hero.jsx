@@ -1,5 +1,7 @@
+import { HERO_DATA } from '../data/portfolio';
+
 export default function Hero() {
-  const techStack = ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'Docker'];
+  const { greeting, name, title, description, techStack, ctaPrimary, ctaSecondary } = HERO_DATA;
 
   const scrollTo = (e, id) => {
     e.preventDefault();
@@ -15,18 +17,18 @@ export default function Hero() {
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight mb-5">
           <span className="block opacity-0" style={{ animation: 'slide-up 0.8s ease-out 0.2s forwards' }}>
-            Xin chào, tôi là
+            {greeting}
           </span>
           <span className="block gradient-text opacity-0 mt-1" style={{ animation: 'slide-up 0.8s ease-out 0.4s forwards' }}>
-            Nguyễn Văn A
+            {name}
           </span>
         </h1>
 
         {/* Subtitle — centered */}
         <div className="opacity-0 flex flex-col items-center" style={{ animation: 'slide-up 0.8s ease-out 0.6s forwards' }}>
-          <p className="text-lg text-white/50 font-light mb-2 text-center">Full-Stack Developer</p>
+          <p className="text-lg text-white/50 font-light mb-2 text-center">{title}</p>
           <p className="text-[14px] text-white/35 leading-relaxed text-center max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Crafting digital experiences with clean code &amp; modern design.
+            {description}
           </p>
         </div>
 
@@ -41,11 +43,11 @@ export default function Hero() {
 
         {/* CTA — bigger buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 opacity-0" style={{ animation: 'slide-up 0.8s ease-out 1s forwards' }}>
-          <a href="#projects" onClick={(e) => scrollTo(e, '#projects')} className="px-8 py-3 rounded-full bg-white text-black font-semibold text-[14px] hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] transition-all duration-300">
-            Xem dự án
+          <a href={ctaPrimary.href} onClick={(e) => scrollTo(e, ctaPrimary.href)} className="px-8 py-3 rounded-full bg-white text-black font-semibold text-[14px] hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] transition-all duration-300">
+            {ctaPrimary.label}
           </a>
-          <a href="#about" onClick={(e) => scrollTo(e, '#about')} className="group px-8 py-3 rounded-full border border-white/20 text-[14px] font-medium hover:border-white/40 transition-all duration-300 flex items-center gap-2">
-            Tìm hiểu thêm
+          <a href={ctaSecondary.href} onClick={(e) => scrollTo(e, ctaSecondary.href)} className="group px-8 py-3 rounded-full border border-white/20 text-[14px] font-medium hover:border-white/40 transition-all duration-300 flex items-center gap-2">
+            {ctaSecondary.label}
             <svg className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>

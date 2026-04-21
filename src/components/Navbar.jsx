@@ -1,11 +1,7 @@
 import { useState, useEffect } from 'react';
+import { NAV_LINKS } from '../data/portfolio';
 
-const NAV_LINKS = [
-  { href: '#about', label: 'Giới thiệu' },
-  { href: '#projects', label: 'Dự án' },
-  { href: '#certificates', label: 'Chứng chỉ' },
-  { href: '#contact', label: 'Liên hệ' },
-];
+
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

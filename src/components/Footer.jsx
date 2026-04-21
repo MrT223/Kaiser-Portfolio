@@ -1,11 +1,8 @@
-const FOOTER_LINKS = [
-  { href: '#about', label: 'Giới thiệu' },
-  { href: '#projects', label: 'Dự án' },
-  { href: '#certificates', label: 'Chứng chỉ' },
-  { href: '#contact', label: 'Liên hệ' },
-];
+import { FOOTER_DATA } from '../data/portfolio';
 
 export default function Footer() {
+  const { logo, copyright, links } = FOOTER_DATA;
+
   const scrollTo = (e, href) => {
     e.preventDefault();
     document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
@@ -19,10 +16,10 @@ export default function Footer() {
             <div className="w-7 h-7 rounded-md border border-white/15 flex items-center justify-center">
               <span className="font-mono font-bold text-xs">&lt;/&gt;</span>
             </div>
-            <span className="text-xs text-white/40">© 2024 DevPortfolio. All rights reserved.</span>
+            <span className="text-xs text-white/40">{copyright}</span>
           </div>
           <div className="flex items-center gap-5">
-            {FOOTER_LINKS.map((link) => (
+            {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -38,3 +35,4 @@ export default function Footer() {
     </footer>
   );
 }
+

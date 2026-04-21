@@ -1,14 +1,11 @@
+import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import SectionHeader from './SectionHeader';
-
-const SKILLS = [
-  { title: 'Frontend', desc: 'React, Vue, Next.js, TailwindCSS', icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /> },
-  { title: 'Backend', desc: 'Node.js, Python, Express, FastAPI', icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" /> },
-  { title: 'Database', desc: 'PostgreSQL, MongoDB, Redis', icon: <><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-3-3v6" /></> },
-  { title: 'DevOps', desc: 'Docker, CI/CD, AWS, Linux', icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" /> },
-];
+import { ABOUT_DATA } from '../data/portfolio';
 
 export default function About() {
+  const { badge, title, highlight, descriptionLine1, bio, stats, skills } = ABOUT_DATA;
+
   const headerRef = useScrollReveal();
   const leftRef = useScrollReveal();
   const rightRef = useScrollReveal();
@@ -19,7 +16,7 @@ export default function About() {
 
       <div className="section-container">
         <div ref={headerRef} className="reveal">
-          <SectionHeader badge="Giới thiệu" title="Về" highlight="bản thân tôi" />
+          <SectionHeader badge={badge} title={title} highlight={highlight} />
         </div>
 
         <div className="grid lg:grid-cols-5 gap-10 items-start">
@@ -43,20 +40,15 @@ export default function About() {
             {/* Stats */}
             <div className="mt-4 p-4 rounded-xl bg-[#141414] border border-white/[0.08]">
               <div className="flex items-center justify-around text-center">
-                <div>
-                  <div className="text-xl font-bold">3+</div>
-                  <div className="text-[11px] text-white/40">Năm KN</div>
-                </div>
-                <div className="w-px h-8 bg-white/10" />
-                <div>
-                  <div className="text-xl font-bold">20+</div>
-                  <div className="text-[11px] text-white/40">Dự án</div>
-                </div>
-                <div className="w-px h-8 bg-white/10" />
-                <div>
-                  <div className="text-xl font-bold">10+</div>
-                  <div className="text-[11px] text-white/40">Khách hàng</div>
-                </div>
+                {stats.map((stat, idx) => (
+                  <React.Fragment key={stat.label}>
+                    <div>
+                      <div className="text-xl font-bold">{stat.value}</div>
+                      <div className="text-[11px] text-white/40">{stat.label}</div>
+                    </div>
+                    {idx < stats.length - 1 && <div className="w-px h-8 bg-white/10" />}
+                  </React.Fragment>
+                ))}
               </div>
             </div>
           </div>
@@ -64,18 +56,19 @@ export default function About() {
           {/* Right: Content — 3 columns */}
           <div ref={rightRef} className="reveal-right lg:col-span-3">
             <h3 className="text-xl font-semibold mb-4 leading-snug">
-              Đam mê tạo ra những sản phẩm <span className="text-white/50">xuất sắc</span>
+              {descriptionLine1.split(' ').map((word, i) => 
+                i === descriptionLine1.split(' ').length - 1 ? <span key={i} className="text-white/50">{word}</span> : word + ' '
+              )}
             </h3>
-            <p className="text-[14px] text-white/45 leading-relaxed mb-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
-            <p className="text-[14px] text-white/45 leading-relaxed mb-6">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </p>
+            {bio.map((paragraph, i) => (
+              <p key={i} className={`text-[14px] text-white/45 leading-relaxed ${i === bio.length - 1 ? 'mb-6' : 'mb-3'}`}>
+                {paragraph}
+              </p>
+            ))}
 
             {/* Skills */}
             <div className="grid grid-cols-2 gap-3">
-              {SKILLS.map((skill) => (
+              {skills.map((skill) => (
                 <div key={skill.title} className="card-base p-4">
                   <div className="flex items-center gap-2.5 mb-1.5">
                     <div className="w-7 h-7 rounded-lg bg-white/[0.08] flex items-center justify-center shrink-0">
@@ -93,3 +86,5 @@ export default function About() {
     </section>
   );
 }
+
+
