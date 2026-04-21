@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import SectionHeader from './SectionHeader';
 import { ABOUT_DATA } from '../data/portfolio';
 
 export default function About() {
-  const { title, highlight, descriptionLine1, bio, stats, skills } = ABOUT_DATA;
+  const { title, highlight, descriptionLine1, bio, stats, skills, profile1, profile2, ygoBack } = ABOUT_DATA;
+  const [isFlipped, setIsFlipped] = useState(false);
 
   const headerRef = useScrollReveal();
   const leftRef = useScrollReveal();
@@ -22,18 +23,34 @@ export default function About() {
         <div className="grid lg:grid-cols-5 gap-10 items-center">
           {/* Left: Image + Stats */}
           <div ref={leftRef} className="reveal-left lg:col-span-2">
-            <div className="rounded-2xl overflow-hidden border border-white/10 aspect-square relative">
-              <div className="img-placeholder w-full h-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 mx-auto rounded-full border-2 border-white/15 flex items-center justify-center mb-3">
-                    <svg className="w-10 h-10 text-white/20" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                    </svg>
+            <div className="rounded-2xl overflow-hidden border border-white/10 aspect-square relative group profile-perspective">
+              {/* Profile 01 - Base Layer */}
+              <img 
+                src={profile1} 
+                alt="Profile Base" 
+                className="profile-base"
+              />
+              <div className="base-shimmer" />
+
+              {/* YGO Slide Overlay + Flip Card */}
+              <div className={`ygo-card-wrapper ${isFlipped ? 'stay-visible' : ''}`}>
+                <div 
+                  className={`ygo-card-inner ${isFlipped ? 'is-flipped' : ''}`}
+                  onClick={() => setIsFlipped(!isFlipped)}
+                >
+                  {/* Front: YGO Back Card */}
+                  <div className="card-face card-face-front">
+                    <img src={ygoBack} alt="YGO Card Back" />
                   </div>
-                  <p className="text-white/25 text-xs font-mono">your-photo.jpg</p>
+                  
+                  {/* Back: Profile 02 */}
+                  <div className="card-face card-face-back">
+                    <img src={profile2} alt="Profile Hidden" />
+                  </div>
                 </div>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
+
+              <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none z-[15]" />
             </div>
 
             {/* Stats */}

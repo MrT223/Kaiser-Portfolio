@@ -29,6 +29,9 @@ export const ABOUT_DATA = {
     { label: "Dự án", value: "10+" },
     { label: "Kỹ năng", value: "15+" },
   ],
+  profile1: "/profile-01.jpg",
+  profile2: "/profile-02.jpg",
+  ygoBack: "/ygo_back_card.jpg",
 
   skills: [
     { 
