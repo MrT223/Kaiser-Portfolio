@@ -81,12 +81,13 @@ export const PROJECTS_DATA = {
       image: "/project-screenshot-02.png"
     },
     {
-      num: '03', type: 'Dashboard', title: 'Analytics Dashboard',
-      desc: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
-      tags: ['Next.js', 'D3.js', 'PostgreSQL', 'Redis'],
-      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />,
-      github: "#",
-      demo: "#"
+      num: '03', type: 'Full-Stack App', title: 'Cine Galaxy',
+      desc: 'Hệ thống quản lý và đặt vé xem phim hiện đại với tính năng đặt ghế trực quan, quản lý rạp, combo bắp nước và tích hợp hệ thống điểm thưởng thành viên.',
+      tags: ['Next.js 14', 'Node.js', 'MongoDB', 'TailwindCSS'],
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M7 4V20M17 4V20M3 8H7M17 8H21M3 12H21M3 16H7M17 16H21M4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20Z" />,
+      github: "https://github.com/MinQuan-kun/Ciname_Galyxa.git",
+      demo: "https://ciname-galyxa.onrender.com",
+      demoLabel: "Live Demo"
     },
   ]
 };
