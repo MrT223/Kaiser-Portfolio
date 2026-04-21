@@ -1,15 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import SectionHeader from './SectionHeader';
 import { ABOUT_DATA } from '../data/portfolio';
 
 export default function About() {
   const { title, highlight, descriptionLine1, bio, stats, skills, profile1, profile2, ygoBack } = ABOUT_DATA;
+  
+  // Dynamic images state to allow cycling
+  const [profileImages, setProfileImages] = useState({
+    base: profile1,
+    revealed: profile2
+  });
   const [isFlipped, setIsFlipped] = useState(false);
+  const [isReplaced, setIsReplaced] = useState(false);
+  const [isProcessing, setIsProcessing] = useState(false);
 
   const headerRef = useScrollReveal();
   const leftRef = useScrollReveal();
   const rightRef = useScrollReveal();
+  const timeoutRef = useRef(null);
+
+  // Cleanup timeouts on unmount
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
 
   return (
     <section id="about" className="relative pt-20 pb-32 overflow-hidden">
@@ -23,32 +39,62 @@ export default function About() {
         <div className="grid lg:grid-cols-5 gap-10 items-center">
           {/* Left: Image + Stats */}
           <div ref={leftRef} className="reveal-left lg:col-span-2">
-            <div className="rounded-2xl overflow-hidden border border-white/10 aspect-square relative group profile-perspective">
-              {/* Profile 01 - Base Layer */}
+            <div 
+              className="rounded-2xl overflow-hidden border border-white/10 aspect-square relative group profile-perspective select-none"
+              onMouseEnter={() => {
+                if (timeoutRef.current) clearTimeout(timeoutRef.current);
+                setIsFlipped(false);
+                setIsReplaced(false);
+                setIsProcessing(false);
+              }}
+              onMouseLeave={() => {
+                if (isProcessing) return;
+                setIsFlipped(false);
+              }}
+              onMouseDown={(e) => e.preventDefault()}
+            >
+              {/* Profile - Base Layer (Visible when idle) */}
               <img 
-                src={profile1} 
+                src={profileImages.base} 
                 alt="Profile Base" 
                 className="profile-base"
               />
               <div className="base-shimmer" />
 
               {/* YGO Slide Overlay + Flip Card */}
-              <div className={`ygo-card-wrapper ${isFlipped ? 'stay-visible' : ''}`}>
-                <div 
-                  className={`ygo-card-inner ${isFlipped ? 'is-flipped' : ''}`}
-                  onClick={() => setIsFlipped(!isFlipped)}
-                >
-                  {/* Front: YGO Back Card */}
+              {!isReplaced && (
+                <div className="ygo-card-wrapper transition-all duration-500">
+                  <div 
+                    className={`ygo-card-inner ${isFlipped ? 'is-flipped' : ''}`}
+                    onClick={() => {
+                      if (isFlipped || isReplaced || isProcessing) return;
+                      
+                      setIsProcessing(true);
+                      setIsFlipped(true);
+                      
+                      timeoutRef.current = setTimeout(() => {
+                        setProfileImages(prev => ({
+                          base: prev.revealed,
+                          revealed: prev.base
+                        }));
+                        setIsFlipped(false);
+                        setIsReplaced(true); // Remove card instantly after swap
+                        setIsProcessing(false);
+                      }, 600);
+                    }}
+                  >
+                  {/* Front: YGO Back Card (Shows when sliding up) */}
                   <div className="card-face card-face-front">
                     <img src={ygoBack} alt="YGO Card Back" />
                   </div>
                   
-                  {/* Back: Profile 02 */}
+                  {/* Back: Revealed Profile Image */}
                   <div className="card-face card-face-back">
-                    <img src={profile2} alt="Profile Hidden" />
+                    <img src={profileImages.revealed} alt="Profile Hidden" />
+                  </div>
                   </div>
                 </div>
-              </div>
+              )}
 
               <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none z-[15]" />
             </div>
