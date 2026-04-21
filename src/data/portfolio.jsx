@@ -3,7 +3,7 @@ import React from 'react';
 export const NAV_LINKS = [
   { href: '#about', label: 'Giới thiệu' },
   { href: '#projects', label: 'Dự án' },
-  { href: '#certificates', label: 'Chứng chỉ' },
+  { href: '#tech-stack', label: 'Công nghệ' },
   { href: '#contact', label: 'Liên hệ' },
 ];
 
@@ -93,13 +93,27 @@ export const PROJECTS_DATA = {
   ]
 };
 
-export const CERTS_DATA = {
-  title: "Vinh danh &",
-  highlight: "Chứng nhận",
-  description: "Các chứng chỉ chuyên môn và giải thưởng trong quá trình phát triển.",
-  certs: [
-    { year: '2024', title: 'Fullstack Web Development', issuer: 'Hồ Chí Minh University of Education', desc: 'Chứng chỉ hoàn thành chương trình đào tạo chuyên sâu về phát triển ứng dụng web hiện đại.', icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /> },
-    { year: '2023', title: 'Top 10 Hackathon Participant', issuer: 'University Tech Club', desc: 'Đạt giải cao trong cuộc thi lập trình giải quyết các vấn đề thực tiễn của sinh viên.', icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" /> },
+export const TECH_STACK_DATA = {
+  title: "Ngôn ngữ &",
+  highlight: "Công nghệ",
+  description: "Bộ kỹ năng chuyên môn và các công nghệ tôi sử dụng để xây dựng sản phẩm.",
+  techs: [
+    { name: 'JavaScript', icon: <path fill="currentColor" d="M11.666 4.667v6.333c0 .828.672 1.5 1.5 1.5s1.5-.672 1.5-1.5V4.667h1.5v6.333a3 3 0 01-6 0V4.667h1.5zM2.834 8.5h6.332v1.5H4.334v2.5H9.166v1.5H2.834V8.5z"/> },
+    { name: 'TypeScript', icon: <path fill="currentColor" d="M3 3h18v18H3V3zm15.12 14.28V6.2h-1.63v1.65h-1.33V6.2h-1.63v11.08h1.63v-1.63h1.33v1.63h1.63zM9.53 17.28v-9.33H11.2v9.33H9.53z"/> },
+    { name: 'Python', icon: <path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.31 13.91l-1.41-1.41 1.41-1.41 1.42 1.41-1.42 1.41zm-6.62 0l-1.41-1.41 1.41-1.41 1.41 1.41-1.41 1.41z"/> },
+    { name: 'C++', icon: <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-2v2h-2v-2h-2v-2h2V9h2v2h2v2zM7 15a3 3 0 01-3-3 3 3 0 013-3 3 3 0 013 3 3 3 0 01-3 3z"/> },
+    { name: 'C#', icon: <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-2v2h-2v-2h-2v-2h2V9h2v2h2v2zM7 15a3 3 0 01-3-3 3 3 0 013-3 3 3 0 013 3 3 3 0 01-3 3z"/> },
+    { name: 'React', icon: <path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/> },
+    { name: 'Next.js', icon: <path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 14.5v-9l6 9h-1.5l-4.5-6.75V16.5H13zm-1-9v9h-1.5v-9H12z"/> },
+    { name: 'NestJS', icon: <path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm4 11l-4 4-4-4V7h8v6z"/> },
+    { name: 'PHP', icon: <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 13H8V9h2v6zm6 0h-2V9h2v6z"/> },
+    { name: 'Laravel', icon: <path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm4 11l-4 4-4-4V7h8v6z"/> },
+    { name: 'MongoDB', icon: <path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/> },
+    { name: 'PostgreSQL', icon: <path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/> },
+    { name: 'Redis', icon: <path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/> },
+    { name: 'Docker', icon: <path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2v10h10V2zM4 12V4h10v8H4z"/> },
+    { name: 'Git', icon: <path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/> },
+    { name: 'Unity', icon: <path fill="currentColor" d="M12 2L2 12l10 10 10-10L12 2zm0 15a5 5 0 110-10 5 5 0 010 10z"/> },
   ]
 };
 
