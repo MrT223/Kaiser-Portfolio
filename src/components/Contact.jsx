@@ -45,7 +45,8 @@ function ContactForm() {
 }
 
 export default function Contact() {
-  const { badge, title, highlight, description, info, socials } = CONTACT_DATA;
+  const { title, highlight, description, info, socials } = CONTACT_DATA;
+
   const headerRef = useScrollReveal();
   const infoRef = useScrollReveal();
   const formRef = useScrollReveal();
@@ -56,7 +57,8 @@ export default function Contact() {
 
       <div className="section-container">
         <div ref={headerRef} className="reveal">
-          <SectionHeader badge={badge} title={title} highlight={highlight} description={description} />
+          <SectionHeader title={title} highlight={highlight} description={description} />
+
         </div>
 
         <div className="grid lg:grid-cols-2 gap-10">

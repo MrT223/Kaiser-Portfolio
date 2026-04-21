@@ -13,13 +13,11 @@ export const HERO_DATA = {
   title: "Software Engineer",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Crafting digital experiences with clean code & modern design.",
   techStack: ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'Docker'],
-  ctaPrimary: { label: "Xem dự án", href: "#projects" },
-  ctaSecondary: { label: "Tìm hiểu thêm", href: "#about" },
 };
 
 export const ABOUT_DATA = {
-  badge: "Giới thiệu",
   title: "Về",
+
   highlight: "bản thân tôi",
   descriptionLine1: "Đam mê tạo ra những sản phẩm xuất sắc",
   bio: [
@@ -56,8 +54,8 @@ export const ABOUT_DATA = {
 };
 
 export const PROJECTS_DATA = {
-  badge: "Dự án",
   title: "Các dự án",
+
   highlight: "nổi bật",
   description: "Những dự án tiêu biểu tôi đã thực hiện.",
   projects: [
@@ -89,8 +87,8 @@ export const PROJECTS_DATA = {
 };
 
 export const CERTS_DATA = {
-  badge: "Chứng chỉ",
   title: "Chứng chỉ &",
+
   highlight: "Thành tựu",
   description: "Những chứng chỉ và thành tựu nổi bật.",
   certs: [
@@ -104,8 +102,8 @@ export const CERTS_DATA = {
 };
 
 export const CONTACT_DATA = {
-  badge: "Liên hệ",
   title: "Hãy",
+
   highlight: "kết nối với tôi",
   description: "Luôn sẵn sàng cho những cơ hội hợp tác mới.",
   info: [

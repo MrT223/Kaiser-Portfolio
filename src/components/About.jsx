@@ -4,7 +4,8 @@ import SectionHeader from './SectionHeader';
 import { ABOUT_DATA } from '../data/portfolio';
 
 export default function About() {
-  const { badge, title, highlight, descriptionLine1, bio, stats, skills } = ABOUT_DATA;
+  const { title, highlight, descriptionLine1, bio, stats, skills } = ABOUT_DATA;
+
 
   const headerRef = useScrollReveal();
   const leftRef = useScrollReveal();
@@ -16,7 +17,8 @@ export default function About() {
 
       <div className="section-container">
         <div ref={headerRef} className="reveal">
-          <SectionHeader badge={badge} title={title} highlight={highlight} />
+          <SectionHeader title={title} highlight={highlight} />
+
         </div>
 
         <div className="grid lg:grid-cols-5 gap-10 items-start">

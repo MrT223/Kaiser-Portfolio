@@ -54,7 +54,8 @@ function ProjectCard({ project, reverse }) {
 }
 
 export default function Projects() {
-  const { badge, title, highlight, description, projects } = PROJECTS_DATA;
+  const { title, highlight, description, projects } = PROJECTS_DATA;
+
   const headerRef = useScrollReveal();
 
   return (
@@ -63,7 +64,8 @@ export default function Projects() {
 
       <div className="section-container">
         <div ref={headerRef} className="reveal">
-          <SectionHeader badge={badge} title={title} highlight={highlight} description={description} />
+          <SectionHeader title={title} highlight={highlight} description={description} />
+
         </div>
 
         <div className="flex flex-col gap-14">

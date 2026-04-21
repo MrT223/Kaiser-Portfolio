@@ -34,7 +34,8 @@ function CertCard({ cert, index }) {
 }
 
 export default function Certificates() {
-  const { badge, title, highlight, description, certs } = CERTS_DATA;
+  const { title, highlight, description, certs } = CERTS_DATA;
+
   const headerRef = useScrollReveal();
 
   return (
@@ -43,7 +44,8 @@ export default function Certificates() {
 
       <div className="section-container">
         <div ref={headerRef} className="reveal">
-          <SectionHeader badge={badge} title={title} highlight={highlight} description={description} />
+          <SectionHeader title={title} highlight={highlight} description={description} />
+
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
