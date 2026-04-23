@@ -16,8 +16,8 @@ function ContactForm() {
     <form onSubmit={handleSubmit} className="card-base p-6 space-y-4">
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="name" className="block text-[12px] text-white/40 mb-1.5">Họ và tên</label>
-          <input type="text" id="name" placeholder="Nguyễn Văn B" className="w-full px-4 py-2.5 text-[14px]" />
+          <label htmlFor="name" className="block text-[12px] text-white/40 mb-1.5">Full Name</label>
+          <input type="text" id="name" placeholder="John Doe" className="w-full px-4 py-2.5 text-[14px]" />
         </div>
         <div>
           <label htmlFor="email" className="block text-[12px] text-white/40 mb-1.5">Email</label>
@@ -25,12 +25,12 @@ function ContactForm() {
         </div>
       </div>
       <div>
-        <label htmlFor="subject" className="block text-[12px] text-white/40 mb-1.5">Chủ đề</label>
-        <input type="text" id="subject" placeholder="Tôi muốn hợp tác..." className="w-full px-4 py-2.5 text-[14px]" />
+        <label htmlFor="subject" className="block text-[12px] text-white/40 mb-1.5">Subject</label>
+        <input type="text" id="subject" placeholder="Project Inquiry / Collaboration" className="w-full px-4 py-2.5 text-[14px]" />
       </div>
       <div>
-        <label htmlFor="message" className="block text-[12px] text-white/40 mb-1.5">Nội dung</label>
-        <textarea id="message" rows={4} placeholder="Nội dung tin nhắn..." className="w-full px-4 py-2.5 text-[14px] resize-none" />
+        <label htmlFor="message" className="block text-[12px] text-white/40 mb-1.5">Message</label>
+        <textarea id="message" rows={4} placeholder="Your message here..." className="w-full px-4 py-2.5 text-[14px] resize-none" />
       </div>
       <button
         type="submit"
@@ -38,7 +38,7 @@ function ContactForm() {
           submitted ? 'bg-emerald-500 text-white' : 'bg-white text-black hover:shadow-[0_0_25px_rgba(255,255,255,0.2)]'
         }`}
       >
-        {submitted ? 'Đã gửi! ✓' : 'Gửi tin nhắn'}
+        {submitted ? 'Sent Successfully! ✓' : 'Send Message'}
       </button>
     </form>
   );
@@ -64,9 +64,9 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-10">
           {/* Info */}
           <div ref={infoRef} className="reveal-left">
-            <h3 className="text-lg font-semibold mb-3">Thông tin liên hệ</h3>
+            <h3 className="text-lg font-semibold mb-3">Contact Information</h3>
             <p className="text-[14px] text-white/35 leading-relaxed mb-6">
-              Hãy liên hệ qua bất kỳ kênh nào bên dưới.
+              Feel free to reach out through any of these channels.
             </p>
 
             <div className="flex flex-col gap-3 mb-6">
