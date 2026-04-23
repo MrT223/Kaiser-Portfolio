@@ -5,6 +5,11 @@ import { useEffect } from 'react';
  */
 export default function CursorGlow() {
   useEffect(() => {
+    // Don't create cursor glow on mobile/tablet or touch devices
+    const isMobile = window.innerWidth < 1024;
+    const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+    if (isMobile || isTouchDevice) return;
+
     // Outer glow — large and soft
     const glow = document.createElement('div');
     glow.style.cssText = `

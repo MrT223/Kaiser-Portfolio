@@ -115,7 +115,7 @@ export default function Contact() {
         </div>
 
         {/* Bento Grid — unified so all gaps are identical */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-3xl mx-auto">
           {featuredChannels.map((channel, idx) => (
             <ChannelCard key={channel.label} channel={channel} index={idx} featured />
           ))}
@@ -125,7 +125,7 @@ export default function Contact() {
         </div>
 
         {/* Availability CTA */}
-        <div ref={ctaRef} className="reveal mt-16 text-center">
+        <div ref={ctaRef} className="reveal mt-16 text-center hidden sm:block">
           <div className="contact-status-badge">
             <div className="contact-status-dot" />
             <span className="text-[13px] text-white/40 font-medium">Available for internship & collaboration</span>

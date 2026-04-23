@@ -14,6 +14,7 @@ export default function About() {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isReplaced, setIsReplaced] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [isSliding, setIsSliding] = useState(false);
 
   const headerRef = useScrollReveal();
   const leftRef = useScrollReveal();
@@ -26,6 +27,35 @@ export default function About() {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
     };
   }, []);
+
+  // Mobile-only automated sequence
+  const handleMobileTap = () => {
+    const isTouch = window.matchMedia('(hover: none) and (pointer: coarse)').matches || window.innerWidth < 1024;
+    if (!isTouch || isProcessing || isFlipped || isReplaced) return;
+
+    setIsProcessing(true);
+    setIsSliding(true); // Step 1: Slide up
+    
+    setTimeout(() => {
+      setIsFlipped(true); // Step 2: Flip
+      
+      timeoutRef.current = setTimeout(() => {
+        setProfileImages(prev => ({
+          base: prev.revealed,
+          revealed: prev.base
+        }));
+        
+        setIsReplaced(true); // Step 3: Swap & Disappear
+        
+        // Reset behind the scenes
+        setIsFlipped(false);
+        setIsSliding(false);
+        setIsProcessing(false);
+        
+        setTimeout(() => setIsReplaced(false), 100);
+      }, 700);
+    }, 450);
+  };
 
   return (
     <section id="about" className="relative pt-20 pb-32 overflow-hidden">
@@ -40,7 +70,8 @@ export default function About() {
           {/* Left: Image + Stats */}
           <div ref={leftRef} className="reveal-left lg:col-span-2">
             <div 
-              className={`rounded-2xl overflow-hidden border border-white/10 aspect-square relative group profile-perspective select-none ${isProcessing ? 'is-locked' : ''}`}
+              className={`rounded-2xl overflow-hidden border border-white/10 aspect-square relative group profile-perspective select-none ${isProcessing ? 'is-locked' : ''} ${isSliding ? 'is-sliding' : ''}`}
+              onClick={handleMobileTap}
               onMouseEnter={() => {
                 if (timeoutRef.current) clearTimeout(timeoutRef.current);
                 setIsFlipped(false);
@@ -63,24 +94,28 @@ export default function About() {
 
               {/* YGO Slide Overlay + Flip Card */}
               {!isReplaced && (
-                <div className="ygo-card-wrapper">
+                <div className={`ygo-card-wrapper ${isSliding ? 'force-slide-up' : ''}`}>
                   <div 
                     className={`ygo-card-inner ${isFlipped ? 'is-flipped' : ''}`}
-                    onClick={() => {
-                      if (isFlipped || isReplaced || isProcessing) return;
-                      
-                      setIsProcessing(true);
-                      setIsFlipped(true);
-                      
-                      timeoutRef.current = setTimeout(() => {
-                        setProfileImages(prev => ({
-                          base: prev.revealed,
-                          revealed: prev.base
-                        }));
-                        setIsFlipped(false);
-                        setIsReplaced(true); // Remove card instantly after swap
-                        setIsProcessing(false);
-                      }, 600);
+                    onClick={(e) => {
+                      // On Mobile, the container's handleMobileTap handles it.
+                      // On Laptop, this handles the flip.
+                      if (window.matchMedia('(hover: hover)').matches) {
+                        if (isFlipped || isReplaced || isProcessing) return;
+                        
+                        setIsProcessing(true);
+                        setIsFlipped(true);
+                        
+                        timeoutRef.current = setTimeout(() => {
+                          setProfileImages(prev => ({
+                            base: prev.revealed,
+                            revealed: prev.base
+                          }));
+                          setIsFlipped(false);
+                          setIsReplaced(true);
+                          setIsProcessing(false);
+                        }, 600);
+                      }
                     }}
                   >
                   {/* Front: YGO Back Card (Shows when sliding up) */}

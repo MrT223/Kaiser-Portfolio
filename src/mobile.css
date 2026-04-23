@@ -1,0 +1,741 @@
+/* ============================================= */
+/* MOBILE RESPONSIVE STYLES                      */
+/* ============================================= */
+/* This file contains ALL mobile-specific styles. */
+/* Desktop/laptop layout is NOT affected.         */
+/* ============================================= */
+
+/* ============================================= */
+/* TABLET & SMALL LAPTOPS (≤ 768px)              */
+/* ============================================= */
+@media (max-width: 768px) {
+
+  /* --- Global Section Adjustments --- */
+  * {
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none;
+  }
+
+  body {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .section-container {
+    padding: 0 16px;
+  }
+
+  section[id] {
+    scroll-margin-top: 64px;
+  }
+
+  /* Reduce main gap between sections */
+  main.flex.flex-col.gap-16 {
+    gap: 3.5rem;
+  }
+
+  /* --- Hero Section --- */
+  #hero {
+    min-height: 100svh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  #hero .section-container {
+    gap: 1.75rem;
+    padding: 0 20px;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  /* Radial glow reduced on mobile */
+  #hero > div:first-child {
+    width: 280px;
+    height: 280px;
+  }
+
+  #hero .flex.flex-col.gap-10 {
+    gap: 1.5rem;
+  }
+
+  /* --- About Section --- */
+  #about {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  /* About grid: stack vertically */
+  #about .grid.lg\:grid-cols-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Profile image container */
+  #about .reveal-left {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  /* Stats bar inside About */
+  #about .mt-4.p-4 {
+    padding: 12px;
+  }
+
+  #about .mt-4.p-4 .text-xl {
+    font-size: 1rem;
+  }
+
+  #about .mt-4.p-4 .text-\[11px\] {
+    font-size: 10px;
+    opacity: 0.6;
+  }
+
+  #about .mt-4.p-4 .flex.items-center.justify-around {
+    gap: 10px;
+  }
+
+  /* About right content */
+  #about .reveal-right h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  #about .reveal-right p {
+    text-align: center;
+  }
+
+  /* Skills grid: 1 column on tablet */
+  #about .grid.grid-cols-2 {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  /* --- Projects Section --- */
+  #projects {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  #projects .grid.lg\:grid-cols-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #projects h3 {
+    font-size: 1.15rem;
+  }
+
+  #projects .flex.flex-col.gap-14 {
+    gap: 3.5rem;
+  }
+
+  /* --- Tech Stack Section --- */
+  #tech-stack {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  /* --- Contact Section --- */
+  #contact {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  /* Contact grid: 2 columns on tablet, featured cards span full */
+  #contact .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .contact-card-inner {
+    padding: 16px;
+  }
+
+  .contact-card--featured .contact-card-inner {
+    padding: 16px 20px;
+  }
+
+  .contact-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+  }
+
+  .contact-icon--lg {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+  }
+
+  /* --- Section Headers --- */
+  .section-container h2 {
+    font-size: 1.6rem;
+  }
+
+  /* --- Footer --- */
+  footer .section-container .flex {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  /* --- Performance: reduce background effects --- */
+  .light-streak {
+    opacity: 0.4;
+  }
+
+  .grid-lines {
+    background-size: 40px 40px;
+  }
+}
+
+/* ============================================= */
+/* MOBILE PHONES (≤ 480px)                       */
+/* ============================================= */
+@media (max-width: 480px) {
+
+  /* --- Global --- */
+  .section-container {
+    padding: 0 14px;
+  }
+
+  /* --- Hero Section --- */
+  #hero {
+    min-height: 100svh;
+  }
+
+  #hero .section-container {
+    gap: 1.5rem;
+    padding: 0 16px;
+  }
+
+  #hero h1 {
+    font-size: 1.65rem;
+    line-height: 1.25;
+  }
+
+  /* Subtitle text */
+  #hero .text-lg {
+    font-size: 0.95rem;
+  }
+
+  #hero .text-\[14px\] {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* Max width for description block */
+  #hero .max-w-md {
+    max-width: 100%;
+    padding: 0 4px;
+  }
+
+  /* Tech tags smaller on phone */
+  #hero .flex.flex-wrap {
+    gap: 0.4rem;
+  }
+
+  #hero .flex.flex-wrap span {
+    padding: 5px 12px;
+    font-size: 11px;
+  }
+
+  /* Scroll indicator */
+  #hero .absolute.bottom-8 {
+    bottom: 20px;
+  }
+
+  /* --- About Section --- */
+  #about {
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+  }
+
+  /* Profile image: centered and proportional */
+  #about .reveal-left {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  /* About content */
+  #about .reveal-right h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  #about .reveal-right p {
+    font-size: 13px;
+  }
+
+  /* Skills section divider */
+  #about .reveal-right div[style*="marginTop"] {
+    margin-top: 10px !important;
+    padding-top: 20px !important;
+  }
+
+  /* Skills header */
+  #about .text-\[10px\] {
+    font-size: 9px;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Skills cards */
+  #about .card-base.p-4 {
+    padding: 12px;
+  }
+
+  #about .card-base .text-\[13px\] {
+    font-size: 12px;
+  }
+
+  #about .card-base .text-\[12px\] {
+    font-size: 11px;
+  }
+
+  /* Skill icon */
+  #about .card-base .w-7.h-7 {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Stats bar */
+  #about .mt-4.p-4 {
+    padding: 10px 8px;
+    margin-top: 12px;
+  }
+
+  #about .mt-4.p-4 .text-xl {
+    font-size: 0.9rem;
+  }
+
+  #about .mt-4.p-4 .text-\[11px\] {
+    font-size: 9px;
+  }
+
+  /* --- Section Headers on phone --- */
+  .section-container h2 {
+    font-size: 1.35rem;
+  }
+
+  .section-container h2 + p,
+  .section-container p.text-white\/35 {
+    font-size: 12px;
+  }
+
+  /* SectionHeader margin */
+  .section-container .text-center[style*="marginBottom"] {
+    margin-bottom: 16px !important;
+  }
+
+  /* --- Projects Section --- */
+  #projects {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #projects .flex.flex-col.gap-14 {
+    gap: 2rem;
+  }
+
+  /* Project card content */
+  #projects .text-xs.font-mono {
+    font-size: 10px;
+  }
+
+  #projects .text-\[12px\] {
+    font-size: 11px;
+  }
+
+  #projects h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #projects .text-\[14px\] {
+    font-size: 13px;
+  }
+
+  /* Project tags */
+  #projects .flex.flex-wrap.gap-2 {
+    gap: 0.35rem;
+  }
+
+  #projects .flex.flex-wrap.gap-2 span {
+    padding: 3px 10px;
+    font-size: 11px;
+  }
+
+  /* Project links */
+  #projects .flex.items-center.gap-5 {
+    gap: 1rem;
+  }
+
+  #projects .text-\[13px\] {
+    font-size: 12px;
+  }
+
+  /* --- Tech Stack Section --- */
+  #tech-stack {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #tech-stack .reveal.mb-12 {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Tech grid: 3 columns on mobile for better density */
+  #tech-stack .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  /* Tech card sizing */
+  #tech-stack .reveal-scale {
+    padding: 10px 6px;
+    gap: 6px;
+  }
+
+  #tech-stack .reveal-scale .w-12.h-12 {
+    width: 36px;
+    height: 36px;
+  }
+
+  #tech-stack .reveal-scale .w-8.h-8 {
+    width: 24px;
+    height: 24px;
+  }
+
+  #tech-stack .reveal-scale .text-\[13px\] {
+    font-size: 11px;
+  }
+
+  /* --- Contact Section --- */
+  #contact {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Contact grid: force single column on phone */
+  #contact .grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.6rem;
+    max-width: 100%;
+  }
+
+  /* Featured contact cards: force span 1 on mobile */
+  #contact .reveal {
+    grid-column: span 1 !important;
+  }
+
+  /* Featured card inner flex: horizontal layout with tighter gap */
+  .contact-card--featured .contact-card-inner .flex {
+    gap: 12px;
+  }
+
+  .contact-card-inner {
+    padding: 14px;
+  }
+
+  .contact-card--featured .contact-card-inner {
+    padding: 14px 16px;
+  }
+
+  /* Standard cards: make horizontal layout to use space better */
+  #contact .contact-card:not(.contact-card--featured) .contact-card-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #contact .contact-card:not(.contact-card--featured) .contact-card-inner > div:first-child {
+    margin-bottom: 0;
+  }
+
+  .contact-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+  }
+
+  .contact-icon--lg {
+    width: 42px;
+    height: 42px;
+    border-radius: 11px;
+  }
+
+  /* Contact card text */
+  .contact-card .text-\[15px\] {
+    font-size: 14px;
+  }
+
+  .contact-card .text-\[14px\] {
+    font-size: 13px;
+  }
+
+  .contact-card .text-\[13px\],
+  .contact-card .text-\[12px\] {
+    font-size: 11px;
+  }
+
+  /* Status badge */
+  .contact-status-badge {
+    padding: 8px 14px;
+    gap: 8px;
+  }
+
+  .contact-status-badge .text-\[13px\] {
+    font-size: 11px;
+  }
+
+  #contact .reveal.mt-16 {
+    margin-top: 2rem;
+  }
+
+  /* --- Footer on phone --- */
+  footer {
+    padding: 1.25rem 0;
+  }
+
+  footer .text-xs {
+    font-size: 10px;
+  }
+
+  footer .flex.items-center.gap-5 {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* --- Navbar mobile menu improvements --- */
+  nav .section-container .h-16 {
+    height: 60px;
+  }
+
+  /* Mobile menu: better backdrop and border */
+  nav .md\:hidden.transition-all {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(10, 10, 10, 0.98);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Mobile menu items: better tap targets and active state */
+  nav .py-4.space-y-1 a {
+    padding: 12px 16px;
+    font-size: 15px;
+    margin: 4px 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+  }
+
+  nav .py-4.space-y-1 a:active {
+    background: rgba(255, 255, 255, 0.1);
+    color: white !important;
+  }
+
+  nav .py-4.space-y-1 a::after {
+    content: '→';
+    opacity: 0.3;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+  }
+
+  nav .py-4.space-y-1 a:active::after {
+    transform: translateX(4px);
+  }
+
+  /* Disable desktop link underline in mobile menu */
+  nav .py-4.space-y-1 a.nav-link::after {
+    display: none;
+  }
+
+  nav .py-4.space-y-1 a.active {
+    background: rgba(255, 255, 255, 0.08);
+    color: white !important;
+  }
+
+  nav .py-4.space-y-1 a.active::after {
+    opacity: 0.8;
+    transform: translateX(4px);
+  }
+
+  /* --- Performance on mobile --- */
+  .light-streak {
+    display: none !important;
+  }
+
+  /* Reduce particle count effect */
+  .particle {
+    opacity: 0.15 !important;
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 6s ease-in-out infinite; /* Slower on mobile */
+  }
+
+  /* Global text improvements */
+  p, span, h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+}
+
+/* ============================================= */
+/* EXTRA SMALL PHONES (≤ 360px)                  */
+/* ============================================= */
+@media (max-width: 360px) {
+
+  .section-container {
+    padding: 0 12px;
+  }
+
+  #hero h1 {
+    font-size: 1.4rem;
+  }
+
+  #hero .text-lg {
+    font-size: 0.85rem;
+  }
+
+  /* About profile even smaller */
+  #about .reveal-left {
+    max-width: 190px;
+  }
+
+  /* Tech stack: 3 cols still works */
+  #tech-stack .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  #tech-stack .reveal-scale .text-\[13px\] {
+    font-size: 10px;
+  }
+
+  /* Section headers */
+  .section-container h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* ============================================= */
+/* TOUCH DEVICE OPTIMIZATIONS                    */
+/* ============================================= */
+@media (hover: none) and (pointer: coarse) {
+  /* YGO card: handle automated animation sequence */
+  .ygo-card-wrapper {
+    transform: translateY(100%) !important; /* Start hidden */
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  /* Disable sticky hover on mobile */
+  .group:hover .ygo-card-wrapper:not(.force-slide-up) {
+    transform: translateY(100%) !important;
+  }
+
+  /* Force slide down when not explicitly sliding */
+  .profile-perspective.is-locked .ygo-card-wrapper:not(.force-slide-up) {
+    transform: translateY(100%) !important;
+  }
+
+  .ygo-card-wrapper.force-slide-up {
+    transform: translateY(0) !important;
+  }
+
+  /* Disable hover effects and use active states instead */
+  .contact-card:hover,
+  .card-base:hover,
+  .group:hover .card-base {
+    transform: none !important;
+    background: rgba(255, 255, 255, 0.02) !important;
+    border-color: rgba(255, 255, 255, 0.06) !important;
+  }
+
+  /* Contact card active state (tap feedback) - Simplified without glow */
+  .contact-card:active {
+    transform: scale(0.98) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+  }
+
+  .contact-card:active .contact-card-border,
+  .contact-card:active .contact-card-glow {
+    animation: none !important;
+    opacity: 0 !important;
+    background: transparent !important;
+  }
+
+  .contact-card:active .contact-icon {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .contact-card:active .contact-icon svg {
+    color: var(--accent) !important;
+  }
+
+  .contact-card:active .contact-arrow {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+
+  /* Tech stack: tap feedback */
+  .reveal-scale:active {
+    transform: scale(0.95) !important;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Projects: disable hover zoom on images and add tap feedback for links */
+  .group:hover img {
+    transform: none !important;
+  }
+
+  #projects a:active {
+    color: white !important;
+    opacity: 1 !important;
+    transform: scale(0.98);
+  }
+
+  #projects .flex.flex-wrap.gap-2 span:active {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Improve tap targets */
+  .nav-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* ============================================= */
+/* LANDSCAPE MOBILE (short height)               */
+/* ============================================= */
+@media (max-height: 500px) and (orientation: landscape) {
+  #hero {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #hero .section-container {
+    gap: 1rem;
+  }
+
+  #hero h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Hide scroll indicator in landscape */
+  #hero .absolute.bottom-8,
+  #hero .absolute.bottom-20px {
+    display: none;
+  }
+}

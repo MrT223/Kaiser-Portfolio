@@ -11,8 +11,10 @@ export default function LightStreaks() {
     const container = particlesRef.current;
     if (!container) return;
 
-    // Generate floating particles
-    for (let i = 0; i < 30; i++) {
+    // Generate floating particles — fewer on mobile for performance
+    const isMobile = window.innerWidth <= 768;
+    const particleCount = isMobile ? 10 : 30;
+    for (let i = 0; i < particleCount; i++) {
       const particle = document.createElement('div');
       particle.classList.add('particle');
       const size = 1 + Math.random() * 2;

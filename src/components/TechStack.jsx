@@ -47,7 +47,7 @@ export default function TechStack() {
           <SectionHeader title={title} highlight={highlight} description={description} />
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-3 sm:gap-4">
           {techs.map((tech, idx) => (
             <TechCard key={tech.name} tech={tech} index={idx} />
           ))}
