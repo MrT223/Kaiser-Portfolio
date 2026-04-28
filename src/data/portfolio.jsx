@@ -139,166 +139,64 @@ export const ACHIEVEMENTS_DATA = {
   certificatesTitle: "Google Developer Badges",
   certificatesDesc: "",
   certificates: [
-    {
-      "name": "AI Boost Bites: Build an AI Support Bot",
-      "image": "https://cdn.qwiklabs.com/zbO1g7PW1bF51aeXwfYYWOTr2UF%2BgLmeMzzpQlL%2BdcA%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23774409"
-    },
-    {
-      "name": "AI Boost Bites: Advanced Analysis in Sheets",
-      "image": "https://cdn.qwiklabs.com/Mvm3fVq9wNPbD18KSavBge%2F7BAEqCA0PBnNJKBLGDo0%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23738313"
-    },
-    {
-      "name": "AI Boost Bites: Notes to Sheets with Gemini",
-      "image": "https://cdn.qwiklabs.com/UtTzuA%2BEMiCpGbOQ0o%2FVwGHFXOaerR0I7Nyfliq69Ng%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23738170"
-    },
-    {
-      "name": "AI Boost Bites: Gemini Calendar Hacks in Gmail",
-      "image": "https://cdn.qwiklabs.com/P7x51m2%2Bq9cdRKiIKnVv2Ex4r151hLx19i2zVnWnXHE%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737967"
-    },
-    {
-      "name": "AI Boost Bites: Build Slides Fast with Gemini",
-      "image": "https://cdn.qwiklabs.com/rfyHXDMUIISYQD4bXOaszWnS%2BZ46jwucmKNbFc1iMtE%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737890"
-    },
-    {
-      "name": "AI Boost Bites: Research Hacks with NotebookLM",
-      "image": "https://cdn.qwiklabs.com/QnMrsZVGxlKRTBXYgibnFidS4Bm3XUG4uRc0%2FcFyhcU%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737648"
-    },
-    {
-      "name": "AI Boost Bites: Find the Story in Your Data",
-      "image": "https://cdn.qwiklabs.com/0ENaohMg5NF58FLM1EKmbcBCWe8utR6JvFweczvikF8%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722588"
-    },
-    {
-      "name": "AI Boost Bites: Streamline Event Planning with AI",
-      "image": "https://cdn.qwiklabs.com/29cYZ0Z0zjFQUFZPBdLzxtSNxCMg7E0DwiSm%2FasjR9k%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722572"
-    },
-    {
-      "name": "AI Boost Bites: Supercharge Research with Gemini",
-      "image": "https://cdn.qwiklabs.com/QCD6qqT%2B%2FQ30G4CsV2u8BDzGZLmj5JJdziaeugF09%2BQ%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722556"
-    },
-    {
-      "name": "AI Boost Bites: Turn Your Ideas into Animated Art",
-      "image": "https://cdn.qwiklabs.com/nELM7maJy2gnbDkZPpiBtiCulbT6ZSZSk%2FQJQb90izA%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722429"
-    },
-    {
-      "name": "AI Boost Bites: Your Personal AI Tutor",
-      "image": "https://cdn.qwiklabs.com/AuLQ1FEl093O58CyWdGPf4%2BG8NvRdJXJLe5YDi1Vsh8%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722415"
-    },
-    {
-      "name": "AI Boost Bites: Gamify Your Study Guides",
-      "image": "https://cdn.qwiklabs.com/%2FCX5yCny46yTm0P8pFP9wRPZJldf2RyUsNKz%2FSS6WN4%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722398"
-    },
-    {
-      "name": "AI Boost Bites: Get Your Competitor's Playbook in Minutes",
-      "image": "https://cdn.qwiklabs.com/jN83C3C564BTnoEFB3c4hHVbIAerjkOMR9GLmHT7UgQ%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722263"
-    },
-    {
-      "name": "AI Boost Bites: Build a Personalized Weather App",
-      "image": "https://cdn.qwiklabs.com/cwN3xKY3gOBgOhN3GYYA02OLiO6Eyq3oDg0Prc0EfFs%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721290"
-    },
-    {
-      "name": "AI Boost Bites: Create a 3D Solar System",
-      "image": "https://cdn.qwiklabs.com/PuTER%2B9UCnPwdtE9FYd57am08S9C6T85bOVS%2FqvwZRk%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721270"
-    },
-    {
-      "name": "AI Boost Bites: Create Your Own Productivity Tools",
-      "image": "https://cdn.qwiklabs.com/oAk8KVgG3dPCgOZfTCQ2VF7QaZ%2FHpVNaQjfftp%2BX%2By4%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721259"
-    },
-    {
-      "name": "AI Boost Bites: Guided Learning with Gemini",
-      "image": "https://cdn.qwiklabs.com/WzJVR4Ra3vwRUl%2FgSsEfAg8wKePaHTD5IUu%2BT%2BGfRBg%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721248"
-    },
-    {
-      "name": "AI Boost Bites: Create Your Own Retro Arcade Game",
-      "image": "https://cdn.qwiklabs.com/77xMsnOKfqYkDQRaajEihlf7nmmugzv5ORrNtUWx68I%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721239"
-    },
-    {
-      "name": "AI Boost Bites: Become a \"Vibe DJ\"",
-      "image": "https://cdn.qwiklabs.com/E9jbszfpImxp0pgFZnfCFD45RCAiei7g%2FpdarSyD4F0%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721218"
-    },
-    {
-      "name": "AI Boost Bites: Create Your Ultimate College Scouting Report",
-      "image": "https://cdn.qwiklabs.com/cC%2BYltmo4EBJeUY5zqr0mRAE6AswaIVTxdwKYn2wReo%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721194"
-    },
-    {
-      "name": "AI Boost Bites: One-Click Campaign Visuals",
-      "image": "https://cdn.qwiklabs.com/fPyfuy6wXS5bWAWyWch%2FgiiCHYrROhgBkfP1O8JrIgc%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721114"
-    },
-    {
-      "name": "AI Boost Bites: From Napkin Sketch to Functional App",
-      "image": "https://cdn.qwiklabs.com/0xPYJPaO%2FGUkm%2FIBpBqlLIGcY%2BmdL7RyMhz1uXvWlso%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721066"
-    },
-    {
-      "name": "AI Boost Bites: Presentation Scripts with Gemini",
-      "image": "https://cdn.qwiklabs.com/Kx%2B%2BpkDKzg9megCwXOn5MfkKj9MNDcouWnVoQwCX%2FdM%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720954"
-    },
-    {
-      "name": "AI Boost Bites: Project Notebooks",
-      "image": "https://cdn.qwiklabs.com/Xn4Orf6MbJr9eljlnLQEzLq8gGtvfvyYRQgtwv7%2F%2Fkk%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720922"
-    },
-    {
-      "name": "AI Boost Bites: NotebookLM for Market Research",
-      "image": "https://cdn.qwiklabs.com/nQ4b0CiXm7m2XUvzzaWKmx7659vihFPyTKWZAq44ubE%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720902"
-    },
-    {
-      "name": "AI Boost Bites: NotebookLM Video Overviews",
-      "image": "https://cdn.qwiklabs.com/OgEKKA6lK1kMMYWRVX0WJAMuteS44UB8IRD4SuamxJU%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720873"
-    },
-    {
-      "name": "AI Boost Bites: Poke Holes in Your Strategy",
-      "image": "https://cdn.qwiklabs.com/MR2VThssybuWq3Epa%2F0ZuVnpclfk4onY3igsHP28Azw%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720173"
-    },
-    {
-      "name": "AI Boost Bites: NotebookLM for Competitive Edge",
-      "image": "https://cdn.qwiklabs.com/lQEE5iqPEa%2BAIhmJmB769uyFwmwIoLvz0Bln5Fk5zvI%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720138"
-    },
-    {
-      "name": "AI Boost Bites: Personalization with customized prompts",
-      "image": "https://cdn.qwiklabs.com/ZwYG3SlROXHvUoDMKccD%2BlEMrAQJtDMpjUPoGa%2BjMI4%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720114"
-    },
-    {
-      "name": "AI Boost Bites: TL;DR with Gemini in Docs & Drive",
-      "image": "https://cdn.qwiklabs.com/5S5xEoPuikFEU0g0TBxTIrNB%2BM9olkl2ulABU4FVuHI%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720079"
-    },
-    {
-      "name": "AI Boost Bites: Customer insights with NotebookLM",
-      "image": "https://cdn.qwiklabs.com/jTe812NsVw%2Bb5UyKo0JrVrNf%2FLNy0cLrnNZbz4ymjzg%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23719915"
-    },
-    {
-      "name": "AI Boost Bites: Gemini Gems – Your ultimate marketing sidekick",
-      "image": "https://cdn.qwiklabs.com/WPXAhcv9U7hTrwB7bp86uMEyMViSQ0anOtY7xszxDkU%3D",
-      "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23719777"
-    }
+    { "name": "AI Boost Bites: Build an AI Support Bot", "image": "https://cdn.qwiklabs.com/zbO1g7PW1bF51aeXwfYYWOTr2UF%2BgLmeMzzpQlL%2BdcA%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23774409" },
+    { "name": "AI Boost Bites: Advanced Analysis in Sheets", "image": "https://cdn.qwiklabs.com/Mvm3fVq9wNPbD18KSavBge%2F7BAEqCA0PBnNJKBLGDo0%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23738313" },
+    { "name": "AI Boost Bites: Notes to Sheets with Gemini", "image": "https://cdn.qwiklabs.com/UtTzuA%2BEMiCpGbOQ0o%2FVwGHFXOaerR0I7Nyfliq69Ng%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23738170" },
+    { "name": "AI Boost Bites: Gemini Calendar Hacks in Gmail", "image": "https://cdn.qwiklabs.com/P7x51m2%2Bq9cdRKiIKnVv2Ex4r151hLx19i2zVnWnXHE%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737967" },
+    { "name": "AI Boost Bites: Build Slides Fast with Gemini", "image": "https://cdn.qwiklabs.com/rfyHXDMUIISYQD4bXOaszWnS%2BZ46jwucmKNbFc1iMtE%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737890" },
+    { "name": "AI Boost Bites: Talk to Your Data in Sheets", "image": "https://cdn.qwiklabs.com/thacVpFGDeNKIRjhsQZLkALF2BKGRoIH%2F8jjEUoETq8%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737875" },
+    { "name": "AI Boost Bites: AI Magic in a Sheets Cell", "image": "https://cdn.qwiklabs.com/fCar2tT5H%2BCfIGmFUC3yS0Wqn4lOoYg80qxswWQTMiE%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737769" },
+    { "name": "AI Boost Bites: Create ‘What If’ Scenarios with AI", "image": "https://cdn.qwiklabs.com/oI44gvkzJsRAoRwr27uik6R7TlbK6IIqU17oygPKe0Q%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737747" },
+    { "name": "AI Boost Bites: Become a Creative Mashup Artist", "image": "https://cdn.qwiklabs.com/Q4NU16PHnMZT1gv%2FNLktZwthKnGF%2FOncadx6prRNXDA%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737736" },
+    { "name": "AI Boost Bites: Become an AI Art Director for Your World", "image": "https://cdn.qwiklabs.com/v5NyWNFdNLvbQB382WkEOn%2FXEEknN2AjdkcqY21%2BX2U%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737720" },
+    { "name": "AI Boost Bites: Create the Perfect Portrait", "image": "https://cdn.qwiklabs.com/nMy4XWOu3iDhorzpljJcNH9g1iMH6atVI7Im%2BX6RmBo%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737690" },
+    { "name": "AI Boost Bites: Research Hacks with NotebookLM", "image": "https://cdn.qwiklabs.com/QnMrsZVGxlKRTBXYgibnFidS4Bm3XUG4uRc0%2FcFyhcU%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737648" },
+    { "name": "AI Boost Bites: Find the Story in Your Data", "image": "https://cdn.qwiklabs.com/0ENaohMg5NF58FLM1EKmbcBCWe8utR6JvFweczvikF8%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722588" },
+    { "name": "AI Boost Bites: Streamline Event Planning with AI", "image": "https://cdn.qwiklabs.com/29cYZ0Z0zjFQUFZPBdLzxtSNxCMg7E0DwiSm%2FasjR9k%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722572" },
+    { "name": "AI Boost Bites: Supercharge Research with Gemini", "image": "https://cdn.qwiklabs.com/QCD6qqT%2B%2FQ30G4CsV2u8BDzGZLmj5JJdziaeugF09%2BQ%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722556" },
+    { "name": "AI Boost Bites: Make Any Big Purchase with Confidence", "image": "https://cdn.qwiklabs.com/rO9aGKQKCBKB2sGCJIPQcCRVun1RNbtRyswLhNdUViU%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722491" },
+    { "name": "AI Boost Bites: Animated Charts with Gemini", "image": "https://cdn.qwiklabs.com/B9NwADnwxT%2F2Ox06LkGwllQXK5n8sYxYco6AitOsa5E%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722456" },
+    { "name": "AI Boost Bites: Turn Your Ideas into Animated Art", "image": "https://cdn.qwiklabs.com/nELM7maJy2gnbDkZPpiBtiCulbT6ZSZSk%2FQJQb90izA%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722429" },
+    { "name": "AI Boost Bites: Your Personal AI Tutor", "image": "https://cdn.qwiklabs.com/AuLQ1FEl093O58CyWdGPf4%2BG8NvRdJXJLe5YDi1Vsh8%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722415" },
+    { "name": "AI Boost Bites: Gamify Your Study Guides", "image": "https://cdn.qwiklabs.com/%2FCX5yCny46yTm0P8pFP9wRPZJldf2RyUsNKz%2FSS6WN4%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722398" },
+    { "name": "AI Boost Bites: Get Your Competitor's Playbook in Minutes", "image": "https://cdn.qwiklabs.com/jN83C3C564BTnoEFB3c4hHVbIAerjkOMR9GLmHT7UgQ%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722263" },
+    { "name": "AI Boost Bites: Build a Personalized Weather App", "image": "https://cdn.qwiklabs.com/cwN3xKY3gOBgOhN3GYYA02OLiO6Eyq3oDg0Prc0EfFs%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721290" },
+    { "name": "AI Boost Bites: Create a 3D Solar System", "image": "https://cdn.qwiklabs.com/PuTER%2B9UCnPwdtE9FYd57am08S9C6T85bOVS%2FqvwZRk%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721270" },
+    { "name": "AI Boost Bites: Create Your Own Productivity Tools", "image": "https://cdn.qwiklabs.com/oAk8KVgG3dPCgOZfTCQ2VF7QaZ%2FHpVNaQjfftp%2BX%2By4%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721259" },
+    { "name": "AI Boost Bites: Guided Learning with Gemini", "image": "https://cdn.qwiklabs.com/WzJVR4Ra3vwRUl%2FgSsEfAg8wKePaHTD5IUu%2BT%2BGfRBg%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721248" },
+    { "name": "AI Boost Bites: Create Your Own Retro Arcade Game", "image": "https://cdn.qwiklabs.com/77xMsnOKfqYkDQRaajEihlf7nmmugzv5ORrNtUWx68I%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721239" },
+    { "name": "AI Boost Bites: Become a \"Vibe DJ\"", "image": "https://cdn.qwiklabs.com/E9jbszfpImxp0pgFZnfCFD45RCAiei7g%2FpdarSyD4F0%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721218" },
+    { "name": "AI Boost Bites: Create Your Ultimate College Scouting Report", "image": "https://cdn.qwiklabs.com/cC%2BYltmo4EBJeUY5zqr0mRAE6AswaIVTxdwKYn2wReo%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721194" },
+    { "name": "AI Boost Bites: One-Click Campaign Visuals", "image": "https://cdn.qwiklabs.com/fPyfuy6wXS5bWAWyWch%2FgiiCHYrROhgBkfP1O8JrIgc%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721114" },
+    { "name": "AI Boost Bites: From Napkin Sketch to Functional App", "image": "https://cdn.qwiklabs.com/0xPYJPaO%2FGUkm%2FIBpBqlLIGcY%2BmdL7RyMhz1uXvWlso%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721066" },
+    { "name": "AI Boost Bites: NotebookLM Reports", "image": "https://cdn.qwiklabs.com/wMG4qZeYKWVp3NFJl4wb%2BVPyhXDasUuEzIskfv2LgYE%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720995" },
+    { "name": "AI Boost Bites: Your Personal Feedback Agent", "image": "https://cdn.qwiklabs.com/IIEOvvtuXEXTRoUW4wuNrYMIQuzLnBWRuUYwzgdhtjI%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720978" },
+    { "name": "AI Boost Bites: Presentation Scripts with Gemini", "image": "https://cdn.qwiklabs.com/Kx%2B%2BpkDKzg9megCwXOn5MfkKj9MNDcouWnVoQwCX%2FdM%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720954" },
+    { "name": "AI Boost Bites: Project Notebooks", "image": "https://cdn.qwiklabs.com/Xn4Orf6MbJr9eljlnLQEzLq8gGtvfvyYRQgtwv7%2F%2Fkk%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720922" },
+    { "name": "AI Boost Bites: NotebookLM for Market Research", "image": "https://cdn.qwiklabs.com/nQ4b0CiXm7m2XUvzzaWKmx7659vihFPyTKWZAq44ubE%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720902" },
+    { "name": "AI Boost Bites: NotebookLM Video Overviews", "image": "https://cdn.qwiklabs.com/OgEKKA6lK1kMMYWRVX0WJAMuteS44UB8IRD4SuamxJU%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720873" },
+    { "name": "AI Boost Bites: Discover Sources in NotebookLM", "image": "https://cdn.qwiklabs.com/lmE%2BtIwpWmqaKkFhz%2BmG1p2rcP8he2lN8lHU%2BmxGZ4M%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720851" },
+    { "name": "AI Boost Bites: NotebookLM Mind Maps", "image": "https://cdn.qwiklabs.com/lY3dvoYQhE%2BDRnTHhHq0byo1Mv3NSNwSwcDyRC4zUUQ%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720826" },
+    { "name": "AI Boost Bites: Intro to NotebookLM", "image": "https://cdn.qwiklabs.com/LfphJE4ffS8gMf1%2Favz7ZvrsZPwFZ1CjxSQEQ4LZR84%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720814" },
+    { "name": "AI Boost Bites: Email Content Creation", "image": "https://cdn.qwiklabs.com/hebgtvz8tlnaoha5CYFrSG1D08LS5WX1LAucQRHkdjQ%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720790" },
+    { "name": "AI Boost Bites: Create Docs in Seconds", "image": "https://cdn.qwiklabs.com/m3RGonNoaiqg65yFpO6v1xPR8ovDrrnZNqWI0i1s9YQ%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720762" },
+    { "name": "AI Boost Bites: AI Power-Ups for Google Workspace", "image": "https://cdn.qwiklabs.com/ydX8SIVF3NS1pN246f9PtJjGf5EmnyrlnQMNYJ9X0zQ%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720723" },
+    { "name": "AI Boost Bites: Tame Your Inbox with AI", "image": "https://cdn.qwiklabs.com/GovfqO0LLP29A0CGYWOopTjGbUmv2j3rv8dIqALv2J4%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720665" },
+    { "name": "AI Boost Bites: Gemini Slide Summaries", "image": "https://cdn.qwiklabs.com/tZobx%2FFQAl1nfDYMRhUg95mlYBI51n1Gfghld39%2FAp0%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720624" },
+    { "name": "AI Boost Bites: No-Code Sheets & Scripts", "image": "https://cdn.qwiklabs.com/1g0gpiB8XR0%2Ft0yObuq99ZvwqDzBTbpEEZtV0MRDzWw%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720556" },
+    { "name": "AI Boost Bites: Amplify Exec Voices with AI", "image": "https://cdn.qwiklabs.com/b5V%2FIhsctZ78FMGa3uYoqf8vjr63N9wzGzPoFwui25k%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720524" },
+    { "name": "AI Boost Bites: Exec Summaries with Gemini Gems", "image": "https://cdn.qwiklabs.com/3bxJs0CERuRoHFv4lUX7J5aPRv%2F58RluvEDcQDZHCWA%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720384" },
+    { "name": "AI Boost Bites: Automate tasks with Gemini and Apps Script", "image": "https://cdn.qwiklabs.com/ifSp1k5lkn1JqxI7fz1oGAxqrfoHzEKdGOmOLII%2FNd0%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720353" },
+    { "name": "AI Boost Bites: \"Eat the Frog\" with NotebookLM", "image": "https://cdn.qwiklabs.com/zu4IlrPPX7ty%2B11bWNvvFGqAOiXbOmRbJsnREnkJhyg%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720234" },
+    { "name": "AI Boost Bites: Gemini Image-to-Sheets Hack", "image": "https://cdn.qwiklabs.com/%2BrIpa83CQUzIpdsu0Dc5zXJiXx%2F%2BTKSi35dsTzzE2T4%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720195" },
+    { "name": "AI Boost Bites: Poke Holes in Your Strategy", "image": "https://cdn.qwiklabs.com/MR2VThssybuWq3Epa%2F0ZuVnpclfk4onY3igsHP28Azw%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720173" },
+    { "name": "AI Boost Bites: NotebookLM for Competitive Edge", "image": "https://cdn.qwiklabs.com/lQEE5iqPEa%2BAIhmJmB769uyFwmwIoLvz0Bln5Fk5zvI%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720138" },
+    { "name": "AI Boost Bites: Personalization with customized prompts", "image": "https://cdn.qwiklabs.com/ZwYG3SlROXHvUoDMKccD%2BlEMrAQJtDMpjUPoGa%2BjMI4%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720114" },
+    { "name": "AI Boost Bites: TL;DR with Gemini in Docs & Drive", "image": "https://cdn.qwiklabs.com/5S5xEoPuikFEU0g0TBxTIrNB%2BM9olkl2ulABU4FVuHI%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720079" },
+    { "name": "AI Boost Bites: Prompting like a Pro with Google Workspace", "image": "https://cdn.qwiklabs.com/hsgoaIaNDljV9yZPQ6UPN67yG0FAtTJ4V7uERoiZDUY%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720047" },
+    { "name": "AI Boost Bites: Content Generation with Gemini Made Easy", "image": "https://cdn.qwiklabs.com/9UrQECS5xwTQbTYNrh3RfL88dWAH0t33na6sbZj09eM%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23719986" },
+    { "name": "AI Boost Bites: Customer insights with NotebookLM", "image": "https://cdn.qwiklabs.com/jTe812NsVw%2Bb5UyKo0JrVrNf%2FLNy0cLrnNZbz4ymjzg%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23719915" },
+    { "name": "AI Boost Bites: Gemini Gems – Your ultimate marketing sidekick", "image": "https://cdn.qwiklabs.com/WPXAhcv9U7hTrwB7bp86uMEyMViSQ0anOtY7xszxDkU%3D", "link": "https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23719777" }
   ]
 };
 

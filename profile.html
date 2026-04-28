@@ -1,0 +1,1457 @@
+
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Minh Tín Bùi | Google Skills</title>
+<link crossorigin href='https://cdn.qwiklabs.com' rel='preconnect'>
+<link crossorigin href='https://fonts.gstatic.com' rel='preconnect'>
+<link crossorigin href='https://fonts.googleapis.com' rel='preconnect'>
+<link as='font' crossorigin='anonymous' href='https://cdn.qwiklabs.com/fonts/google-symbols.woff2' rel='preload' type='font/woff2'>
+<link as='font' crossorigin='anonymous' href='https://cdn.qwiklabs.com/fonts/material-icons.woff2' rel='preload' type='font/woff2'>
+<link as='font' crossorigin='anonymous' href='https://cdn.qwiklabs.com/fonts/google-material-icons.woff2' rel='preload' type='font/woff2'>
+<style>
+  @mixin font_face_props {
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+  }
+  
+  @font-face {
+    @include font_face_props;
+  
+    font-family: 'Google Material Icons';
+    src: url('https://cdn.qwiklabs.com/fonts/google-material-icons.woff2') format('woff2');
+  }
+  
+  @font-face {
+    @include font_face_props;
+  
+    font-family: 'Material Icons';
+    src: url('https://cdn.qwiklabs.com/fonts/material-icons.woff2') format('woff2');
+  }
+  
+  @font-face {
+    @include font_face_props;
+  
+    font-family: 'Google Symbols';
+    src: url('https://cdn.qwiklabs.com/fonts/google-symbols.woff2') format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+  }
+  
+  .google-symbols {
+    font-family: 'Google Symbols';
+  }
+  
+  .google-material-icons {
+    font-family: 'Google Material Icons';
+  }
+  
+  .material-icons,
+  .google-symbols,
+  .google-material-icons {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+</style>
+
+<meta name="action-cable-url" content="/cable" />
+<script>
+//<![CDATA[
+window.gon={};gon.deployment="google-run";
+//]]>
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    if (arguments[0] === 'event') {
+      dataLayer.push({ event: arguments[1], eventParams: arguments[2] }, { eventParams: undefined });
+    } else {
+      dataLayer.push(arguments);
+    }
+  }
+  let gtmLoaded = false;
+  function glueCookieNotificationBarLoaded() {
+    if (!gtmLoaded) {
+      dataLayerInit(
+        false,
+        false,
+        false,
+        false,
+        'google-run'
+      );
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer',"GTM-MBRHNDG7");
+      pushPageEvent();
+      if (typeof sessEvent !== 'undefined') {
+        pushSessionEvent(sessEvent, sessLoginStatus, sessPreviousPath);
+      }
+      gtmLoaded = true;
+    }
+  }
+</script>
+<script src="https://cdn.qwiklabs.com/assets/hallofmirrors/polyfills/webcomponents-loader-2e147cb1679d97581f981243bfc2d1c03dc34a58.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/head_scripts-78121e337319c81329ed63eb61196ea57f74a57d.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/vendor-64a8f00d2c4f7491d2e5c39e6914bd8b28b18fbe.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/application-6abf95ce55e5305016448953726dcb38f9160d49.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/hallofmirrors/hallofmirrors-a61517f0c6c617c666b34fa5614148f6a0754190.js"></script>
+<script src="https://cdn.qwiklabs.com/nk_components/1.1.41/index.js"></script>
+<script src="https://support.google.com/inapp/api.js"></script>
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="jG_5_6WFytL3S-1oh1L9ae5gJsydCAHLHemZuXqDMUvXudKoMMbKFv2U6hw0PBLD0kvyYmO0klwwEXuGHrW8IQ" />
+<meta content='width=device-width, initial-scale=1.0, user-scalable=yes' name='viewport'>
+<meta content='1rRsY0INj8RvwB5EF5pwdxt2A2P9aDgAlsICaJ0d5w0' name='google-site-verification'>
+<meta content='#3681E4' property='msapplication-TileColor'>
+<meta content='/google_standard_32.svg' property='msapplication-TileImage'>
+<meta content='{&quot;userId&quot;:null,&quot;experimentIds&quot;:[&quot;reroute_new_interview_warmup&quot;,&quot;subscription_ux&quot;,&quot;switch_path_and_explore_headers&quot;,&quot;wipeout_hard_delete&quot;,&quot;search_autocomplete&quot;,&quot;in_context_all_labs&quot;,&quot;gamification_leaderboards&quot;,&quot;learning_plan_search&quot;,&quot;gamification_xp&quot;,&quot;canonical_domain_redirect&quot;,&quot;google_dev_payment&quot;,&quot;gamification_achievements&quot;,&quot;one_stop_hub&quot;,&quot;in_context_view&quot;,&quot;search_async&quot;,&quot;sso_redirect&quot;,&quot;gwg_catalog&quot;,&quot;entity_api_keys&quot;,&quot;new_org_dashboard_announcement&quot;,&quot;catalog_filter_chips&quot;,&quot;use_mosaic&quot;,&quot;relaunch&quot;,&quot;banner_breadcrumbs&quot;,&quot;credly_integration_announcement_modal&quot;,&quot;course_exams&quot;,&quot;relaunch_subscriptions&quot;,&quot;relaunch_extra&quot;,&quot;remove_gdp_subscription&quot;,&quot;sitemap_poc&quot;,&quot;search_sort_by&quot;,&quot;next_2026_collections&quot;,&quot;cache_explore_page_result&quot;,&quot;learning_plan_slug&quot;,&quot;relaunch_collection_ai&quot;,&quot;show_new_course_exams&quot;,&quot;cdn_fonts&quot;,&quot;landing_page&quot;,&quot;show_org_catalog_button&quot;,&quot;gamification_streaks&quot;,&quot;auto_upgrade_game_labs&quot;,&quot;hide_unpopular_filters&quot;,&quot;gwg_paid_chip&quot;,&quot;use_docebo_features&quot;,&quot;docebo_sync_org_support&quot;,&quot;gamification_ui_data&quot;,&quot;relaunch_for_sso&quot;,&quot;gamification_ui&quot;,&quot;golden_lab_auto_locations_group_b&quot;,&quot;dashboard_jobs&quot;,&quot;relaunch_grid_list&quot;,&quot;onramp&quot;,&quot;alexandria_subscriptions_pagination&quot;,&quot;challenge_lab_fast_track&quot;,&quot;gamification&quot;,&quot;innovator_sign_in&quot;,&quot;credly&quot;,&quot;docebo_sync&quot;,&quot;interview_warmup_turndown&quot;,&quot;front_door_landing_page&quot;,&quot;golden_lab_auto_locations_group_a&quot;,&quot;innovator_gear_sign_in&quot;,&quot;search_suggestions&quot;,&quot;catalog_filters_button&quot;,&quot;gamification_leagues&quot;,&quot;discovery_lab_duration_estimate&quot;,&quot;one_tap&quot;,&quot;new_org_dashboard&quot;,&quot;feedback&quot;,&quot;org_invite_link&quot;,&quot;docebo_ux&quot;,&quot;oauth_risc_shutoff&quot;]}' name='help-api-product-data'>
+<meta content='{&quot;groupIds&quot;:[]}' name='help-api-custom-data'>
+<meta content='Learn and earn with Google Skills, a platform that provides  free training and certifications for Google Cloud partners and beginners. Explore now.' name='description'>
+<meta content='Google Skills' name='author'>
+<meta content='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec' property='og:url'>
+<meta content='Minh Tín Bùi | Google Skills' property='og:title'>
+<meta content='website' property='og:type'>
+<meta content='/google_standard_32.svg' property='og:image'>
+<meta content='Google Skills' property='og:site_name'>
+<meta content='Learn and earn with Google Skills, a platform that provides  free training and certifications for Google Cloud partners and beginners. Explore now.' property='og:description'>
+
+
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=ar' hreflang='ar' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=de' hreflang='de' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=es' hreflang='es' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=fr' hreflang='fr' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=fr_CA' hreflang='fr-CA' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=he' hreflang='he' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=id' hreflang='id' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=it' hreflang='it' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=ja' hreflang='ja' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=ko' hreflang='ko' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=pl' hreflang='pl' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=pt_BR' hreflang='pt-BR' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=pt_PT' hreflang='pt-PT' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=ru' hreflang='ru' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=tr' hreflang='tr' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=uk' hreflang='uk' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=zh' hreflang='zh' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=zh_TW' hreflang='zh-TW' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec' hreflang='en' rel='alternate'>
+<link href='https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec' hreflang='x-default' rel='alternate'>
+<link href='https://cdn.qwiklabs.com/X46FrQX4iLxHW5MxL8jICvgZM0evMEKscCeQO%2BazGdo%3D' rel='icon' type='image/x-icon'>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400|Roboto+Mono:400,700|Roboto:300,400,500,700|Google+Sans:300,400,500,700|Google+Sans+Display:400|Google+Sans+Text:400,500,700" />
+
+<link rel="stylesheet" href="https://cdn.qwiklabs.com/assets/application-c55c4820eb7d07ad91b3e3106bfcf26a629b691a.css" media="all" />
+<link rel="stylesheet" href="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.css" />
+
+
+<style>
+  :root {
+    --primary-text-on-surface-color: #355d9c;
+    --primary-text-on-surface-color-dark: #2f538b;
+    --primary-text-on-surface-color-darker: #29497a;
+    --primary-text-on-surface-color-darkest: #243e69;
+    --primary-surface-color: #586d8d;
+    --primary-surface-color-rgb: 88,109,141;
+    --primary-surface-color-light: #e0e4eb;
+    --primary-surface-color-lightest: #eff2f5;
+    --text-on-primary-color: #ffffff;
+    --accent-text-on-surface-color: #f000e8;
+    --accent-surface-color: #f9ab00;
+    --accent-surface-color-rgb: 249,171,0;
+    --accent-surface-color-light: #ffefcc;
+    --text-on-accent-color: #000000;
+  }
+</style>
+
+
+
+</head>
+<body class=''>
+<ql-drawer-container class='body-container' relaunch>
+<div class='sticky' slot='header'>
+<ql-toolbar class='app-toolbar' jumpEnabled role='banner'>
+<div class='toolbar-navigation' slot='navigation'>
+<ql-toggle-button animatedToggle="true" expandable="true" for="app-nav" onIcon="menu_open" offIcon="menu" label="Menu" class="always-show" data-tooltip-text="Menu"></ql-toggle-button>
+</div>
+<div class='toolbar-title gs-logo' slot='title'>
+<a class="custom-logo" aria-label="Google Skills" href="/"><div class="custom-logo"><img alt="Google Skills" height="24" aria-label="Google Skills" src="https://cdn.qwiklabs.com/lqJbxogu4tSLez1OvjDcIO8rwow6cPLwvrfIdmQLf6U%3D" /></div></a>
+</div>
+<div class='search-bar tablet-hide' slot='search'></div>
+<div class='toolbar-actions' slot='action'>
+<ql-icon-button class='mobile-hide' data-tooltip-text='Help' icon='help_outline' id='help-menu-button' label='Help options'></ql-icon-button>
+<ql-menu for='help-menu-button' id='help-menu'>
+<ql-menu-item data-analytics-action='opened_help' data-analytics-label='profile' label='Help Center' onclick='hallofmirrors.helpService.startHelp({&quot;productData&quot;:{&quot;userId&quot;:null},&quot;context&quot;:&quot;profile&quot;})'></ql-menu-item>
+<ql-menu-item href='mailto:support-skills@google.com' label='Email support'></ql-menu-item>
+<ql-menu-item href='https://reportingwidget.google.com/widget/54?cid=1&amp;url=https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?' label='Report Illegal Content'></ql-menu-item>
+</ql-menu>
+
+<ql-icon-button aria-expanded='false' aria-haspopup aria-label='More options' class='mobile-show' data-toggle='tooltip' icon='more_vert' id='mobile-more-menu-button' title='More options'></ql-icon-button>
+<ql-menu for='mobile-more-menu-button' id='mobile-more-menu'>
+
+
+<ql-menu-item aria-controls='help-submenu' aria-expanded='false' aria-haspopup='true' id='help-submenu-button' label='Help' role='button' tabindex='0'></ql-menu-item>
+<ql-menu-item aria-controls='language-submenu' aria-expanded='false' aria-haspopup='true' id='language-submenu-button' label='Language' role='button' tabindex='0'></ql-menu-item>
+</ql-menu>
+
+<ql-menu class='submenu' for='help-submenu-button' id='help-submenu'>
+<ql-menu-item data-analytics-action='opened_help' data-analytics-label='' label='Help Center' onclick='hallofmirrors.helpService.startHelp({&quot;productData&quot;:{&quot;userId&quot;:null},&quot;context&quot;:&quot;&quot;})'></ql-menu-item>
+<ql-menu-item href='mailto:support-skills@google.com' label='Email support'></ql-menu-item>
+<ql-menu-item href='https://reportingwidget.google.com/widget/54?cid=1&amp;url=https%3A%2F%2Fwww.skills.google%2Fpublic_profiles%2Ffd0f4879-c8f6-438a-9baa-e958d30ac1ec%3F' label='Report Illegal Content'></ql-menu-item>
+</ql-menu>
+<ql-menu class='submenu' for='language-submenu-button' id='language-submenu'>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='ar' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=ar' label='العربية‬‎' lang='ar' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='de' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=de' label='Deutsch' lang='de' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='en' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=en' label='English' lang='en' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='es' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=es' label='español (Latinoamérica)' lang='es' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='fr' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=fr' label='français' lang='fr' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='fr_CA' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=fr_CA' label='français (Canada)' lang='fr-CA' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='he' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=he' label='עברית' lang='he' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='id' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=id' label='bahasa Indonesia' lang='id' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='it' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=it' label='italiano' lang='it' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='ja' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=ja' label='日本語' lang='ja' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='ko' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=ko' label='한국어' lang='ko' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='pl' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=pl' label='polski' lang='pl' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='pt_BR' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=pt_BR' label='português (Brasil)' lang='pt-BR' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='pt_PT' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=pt_PT' label='português (Portugal)' lang='pt-PT' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='ru' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=ru' label='русский' lang='ru' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='tr' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=tr' label='Türkçe' lang='tr' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='uk' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=uk' label='українська' lang='uk' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='zh' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=zh' label='简体中文' lang='zh' role='menuitem'></ql-menu-item>
+<ql-menu-item data-analytics-action='changed_locale' data-analytics-label='zh_TW' href='/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec?locale=zh_TW' label='繁體中文' lang='zh-TW' role='menuitem'></ql-menu-item>
+</ql-menu>
+
+<ql-button ariaLabel='Join by creating an account' data-analytics-action='clicked_header_join' data-analytics-actions='[&quot;clicked_header_join&quot;, &quot;navigation&quot;]' data-analytics-button-text='Join' data-analytics-label='Join' data-analytics-legacy-event-name='clicked_header_join' data-analytics-link-url='/users/sign_up' data-analytics-position='header' data-analytics-type='eventParams' href='/users/sign_up'>
+Join
+</ql-button>
+<ql-button data-analytics-action='clicked_header_sign_in' data-analytics-actions='[&quot;clicked_header_sign_in&quot;, &quot;navigation&quot;]' data-analytics-button-text='Sign in' data-analytics-label='Sign in' data-analytics-legacy-event-name='clicked_header_sign_in' data-analytics-link-url='/users/sign_in' data-analytics-position='header' data-analytics-type='eventParams' href='/users/sign_in'>
+Sign in
+</ql-button>
+
+
+</div>
+</ql-toolbar>
+</div>
+<ql-drawer id='app-nav' openWidth='15' relaunch responsive='768' slot='drawer' width='6' widthUnit='rem'>
+<nav class='ql-sidenav relaunch'>
+<ql-fab expandable href='/users/sign_in' icon='login' label='Sign in'></ql-fab>
+<ql-sidenav-item href='/' icon='home' label='Home' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/&#39;, label:&#39;Home&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/catalog' icon='book_2' label='Catalog' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/catalog&#39;, label:&#39;Catalog&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/paths' icon='conversion_path' label='Paths' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/paths&#39;, label:&#39;Paths&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item expandable icon='category' label='Collections' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;&#39;, label:&#39;Collections&#39;})' relaunch>
+<div class='sub-items' slot='submenu'>
+<ql-sidenav-item href='/collections/ai-boost-bites' label='AI Boost Bites' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/collections/ai-boost-bites&#39;, label:&#39;AI Boost Bites&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/collections/career-certificates' label='Career Certificates' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/collections/career-certificates&#39;, label:&#39;Career Certificates&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/collections/cloud' label='Cloud' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/collections/cloud&#39;, label:&#39;Cloud&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/collections/deepmind' label='DeepMind' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/collections/deepmind&#39;, label:&#39;DeepMind&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+</div>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/subscriptions' icon='subscriptions' label='Subscriptions' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/subscriptions&#39;, label:&#39;Subscriptions&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+<ql-sidenav-item href='/learningcenter' icon='corporate_fare' label='Organizations' onclick='ql.track(&#39;click_sidenav_item&#39;, { pagePath:&#39;/learningcenter&#39;, label:&#39;Organizations&#39;})' relaunch>
+
+</ql-sidenav-item>
+
+</nav>
+
+</ql-drawer>
+<ql-drawer-content class='body-content' slot='drawer-content'>
+<div class='banner'>
+<div id='callout-container'>
+<ql-callout id='message-15' severity='info'>
+<div slot='content'>
+Vertex AI is now Gemini Enterprise Agent Platform! We are currently updating our content to reflect this change. Please bear with us if you encounter naming inconsistencies during this transition.
+</div>
+</ql-callout>
+</div>
+
+</div>
+<div class='page-header'>
+<div class='page-main-banner'>
+<div class='page-main-banner-breadcrumbs'>
+
+</div>
+<div class='page-main-banner-console-free-trial'>
+<div class='console-free-trial'>
+<p class='console-free-trial-content ql-body-medium'>
+Apply your skills in Google Cloud console
+</p>
+<div class='console-free-trial-actions'>
+<ql-button data-analytics-action='gcp_cta' data-analytics-position='free trial banner' data-analytics-type='eventParams' elevated href='https://console.cloud.google.com/freetrial' label='Get started' target='_blank'></ql-button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<main id='jump-content'>
+
+<div class='text--center'>
+<ql-avatar class='profile-avatar l-mbl' size='160' src='https://lh3.googleusercontent.com/a/ACg8ocLeGse0yyDUIxTbhXx3lt94Wrj6WzXtjNmfWINmsGjACmlAoGvc=s320-c'></ql-avatar>
+<h1 class='ql-display-small'>
+Minh Tín Bùi
+</h1>
+<p class='ql-body-large l-mbl'>
+Member since 2023
+</p>
+<div class='profile-league'>
+<h2 class='ql-headline-medium'>Bronze League</h2>
+<strong>5948 points</strong>
+<img width="120" src="https://cdn.qwiklabs.com/assets/leagues/bronze_sm_new-b878a9c58ed1d030f2fe24ec0d3cac49a9d3f7b4.png" />
+</div>
+<div class='profile-badges'>
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23774409"><img role="presentation" src="https://cdn.qwiklabs.com/zbO1g7PW1bF51aeXwfYYWOTr2UF%2BgLmeMzzpQlL%2BdcA%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Build an AI Support Bot
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 24, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Build an AI Support Bot' label='Learn more' modal='public-profile-award-modal-0' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23738313"><img role="presentation" src="https://cdn.qwiklabs.com/Mvm3fVq9wNPbD18KSavBge%2F7BAEqCA0PBnNJKBLGDo0%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Advanced Analysis in Sheets
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 22, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Advanced Analysis in Sheets' label='Learn more' modal='public-profile-award-modal-1' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23738170"><img role="presentation" src="https://cdn.qwiklabs.com/UtTzuA%2BEMiCpGbOQ0o%2FVwGHFXOaerR0I7Nyfliq69Ng%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Notes to Sheets with Gemini
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 22, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Notes to Sheets with Gemini' label='Learn more' modal='public-profile-award-modal-2' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737967"><img role="presentation" src="https://cdn.qwiklabs.com/P7x51m2%2Bq9cdRKiIKnVv2Ex4r151hLx19i2zVnWnXHE%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Gemini Calendar Hacks in Gmail
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 22, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Gemini Calendar Hacks in Gmail' label='Learn more' modal='public-profile-award-modal-3' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737890"><img role="presentation" src="https://cdn.qwiklabs.com/rfyHXDMUIISYQD4bXOaszWnS%2BZ46jwucmKNbFc1iMtE%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Build Slides Fast with Gemini
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 22, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Build Slides Fast with Gemini' label='Learn more' modal='public-profile-award-modal-4' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737875"><img role="presentation" src="https://cdn.qwiklabs.com/thacVpFGDeNKIRjhsQZLkALF2BKGRoIH%2F8jjEUoETq8%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Talk to Your Data in Sheets
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 22, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Talk to Your Data in Sheets' label='Learn more' modal='public-profile-award-modal-5' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737769"><img role="presentation" src="https://cdn.qwiklabs.com/fCar2tT5H%2BCfIGmFUC3yS0Wqn4lOoYg80qxswWQTMiE%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: AI Magic in a Sheets Cell
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 22, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: AI Magic in a Sheets Cell' label='Learn more' modal='public-profile-award-modal-6' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737747"><img role="presentation" src="https://cdn.qwiklabs.com/oI44gvkzJsRAoRwr27uik6R7TlbK6IIqU17oygPKe0Q%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Create ‘What If’ Scenarios with AI
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 22, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Create ‘What If’ Scenarios with AI' label='Learn more' modal='public-profile-award-modal-7' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737736"><img role="presentation" src="https://cdn.qwiklabs.com/Q4NU16PHnMZT1gv%2FNLktZwthKnGF%2FOncadx6prRNXDA%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Become a Creative Mashup Artist
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 22, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Become a Creative Mashup Artist' label='Learn more' modal='public-profile-award-modal-8' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737720"><img role="presentation" src="https://cdn.qwiklabs.com/v5NyWNFdNLvbQB382WkEOn%2FXEEknN2AjdkcqY21%2BX2U%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Become an AI Art Director for Your World
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 22, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Become an AI Art Director for Your World' label='Learn more' modal='public-profile-award-modal-9' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737690"><img role="presentation" src="https://cdn.qwiklabs.com/nMy4XWOu3iDhorzpljJcNH9g1iMH6atVI7Im%2BX6RmBo%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Create the Perfect Portrait
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 22, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Create the Perfect Portrait' label='Learn more' modal='public-profile-award-modal-10' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23737648"><img role="presentation" src="https://cdn.qwiklabs.com/QnMrsZVGxlKRTBXYgibnFidS4Bm3XUG4uRc0%2FcFyhcU%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Research Hacks with NotebookLM
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 22, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Research Hacks with NotebookLM' label='Learn more' modal='public-profile-award-modal-11' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722588"><img role="presentation" src="https://cdn.qwiklabs.com/0ENaohMg5NF58FLM1EKmbcBCWe8utR6JvFweczvikF8%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Find the Story in Your Data
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Find the Story in Your Data' label='Learn more' modal='public-profile-award-modal-12' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722572"><img role="presentation" src="https://cdn.qwiklabs.com/29cYZ0Z0zjFQUFZPBdLzxtSNxCMg7E0DwiSm%2FasjR9k%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Streamline Event Planning with AI
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Streamline Event Planning with AI' label='Learn more' modal='public-profile-award-modal-13' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722556"><img role="presentation" src="https://cdn.qwiklabs.com/QCD6qqT%2B%2FQ30G4CsV2u8BDzGZLmj5JJdziaeugF09%2BQ%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Supercharge Research with Gemini
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Supercharge Research with Gemini' label='Learn more' modal='public-profile-award-modal-14' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722491"><img role="presentation" src="https://cdn.qwiklabs.com/rO9aGKQKCBKB2sGCJIPQcCRVun1RNbtRyswLhNdUViU%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Make Any Big Purchase with Confidence
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Make Any Big Purchase with Confidence' label='Learn more' modal='public-profile-award-modal-15' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722456"><img role="presentation" src="https://cdn.qwiklabs.com/B9NwADnwxT%2F2Ox06LkGwllQXK5n8sYxYco6AitOsa5E%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Animated Charts with Gemini
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Animated Charts with Gemini' label='Learn more' modal='public-profile-award-modal-16' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722429"><img role="presentation" src="https://cdn.qwiklabs.com/nELM7maJy2gnbDkZPpiBtiCulbT6ZSZSk%2FQJQb90izA%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Turn Your Ideas into Animated Art
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Turn Your Ideas into Animated Art' label='Learn more' modal='public-profile-award-modal-17' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722415"><img role="presentation" src="https://cdn.qwiklabs.com/AuLQ1FEl093O58CyWdGPf4%2BG8NvRdJXJLe5YDi1Vsh8%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Your Personal AI Tutor
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Your Personal AI Tutor' label='Learn more' modal='public-profile-award-modal-18' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722398"><img role="presentation" src="https://cdn.qwiklabs.com/%2FCX5yCny46yTm0P8pFP9wRPZJldf2RyUsNKz%2FSS6WN4%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Gamify Your Study Guides
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Gamify Your Study Guides' label='Learn more' modal='public-profile-award-modal-19' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23722263"><img role="presentation" src="https://cdn.qwiklabs.com/jN83C3C564BTnoEFB3c4hHVbIAerjkOMR9GLmHT7UgQ%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Get Your Competitor&#39;s Playbook in Minutes
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Get Your Competitor&#39;s Playbook in Minutes' label='Learn more' modal='public-profile-award-modal-20' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721290"><img role="presentation" src="https://cdn.qwiklabs.com/cwN3xKY3gOBgOhN3GYYA02OLiO6Eyq3oDg0Prc0EfFs%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Build a Personalized Weather App
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Build a Personalized Weather App' label='Learn more' modal='public-profile-award-modal-21' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721270"><img role="presentation" src="https://cdn.qwiklabs.com/PuTER%2B9UCnPwdtE9FYd57am08S9C6T85bOVS%2FqvwZRk%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Create a 3D Solar System
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Create a 3D Solar System' label='Learn more' modal='public-profile-award-modal-22' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721259"><img role="presentation" src="https://cdn.qwiklabs.com/oAk8KVgG3dPCgOZfTCQ2VF7QaZ%2FHpVNaQjfftp%2BX%2By4%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Create Your Own Productivity Tools
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Create Your Own Productivity Tools' label='Learn more' modal='public-profile-award-modal-23' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721248"><img role="presentation" src="https://cdn.qwiklabs.com/WzJVR4Ra3vwRUl%2FgSsEfAg8wKePaHTD5IUu%2BT%2BGfRBg%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Guided Learning with Gemini
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Guided Learning with Gemini' label='Learn more' modal='public-profile-award-modal-24' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721239"><img role="presentation" src="https://cdn.qwiklabs.com/77xMsnOKfqYkDQRaajEihlf7nmmugzv5ORrNtUWx68I%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Create Your Own Retro Arcade Game
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Create Your Own Retro Arcade Game' label='Learn more' modal='public-profile-award-modal-25' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721218"><img role="presentation" src="https://cdn.qwiklabs.com/E9jbszfpImxp0pgFZnfCFD45RCAiei7g%2FpdarSyD4F0%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Become a &quot;Vibe DJ&quot;
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Become a &quot;Vibe DJ&quot;' label='Learn more' modal='public-profile-award-modal-26' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721194"><img role="presentation" src="https://cdn.qwiklabs.com/cC%2BYltmo4EBJeUY5zqr0mRAE6AswaIVTxdwKYn2wReo%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Create Your Ultimate College Scouting Report
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Create Your Ultimate College Scouting Report' label='Learn more' modal='public-profile-award-modal-27' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721114"><img role="presentation" src="https://cdn.qwiklabs.com/fPyfuy6wXS5bWAWyWch%2FgiiCHYrROhgBkfP1O8JrIgc%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: One-Click Campaign Visuals
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: One-Click Campaign Visuals' label='Learn more' modal='public-profile-award-modal-28' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23721066"><img role="presentation" src="https://cdn.qwiklabs.com/0xPYJPaO%2FGUkm%2FIBpBqlLIGcY%2BmdL7RyMhz1uXvWlso%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: From Napkin Sketch to Functional App
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: From Napkin Sketch to Functional App' label='Learn more' modal='public-profile-award-modal-29' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720995"><img role="presentation" src="https://cdn.qwiklabs.com/wMG4qZeYKWVp3NFJl4wb%2BVPyhXDasUuEzIskfv2LgYE%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: NotebookLM Reports 
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: NotebookLM Reports ' label='Learn more' modal='public-profile-award-modal-30' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720978"><img role="presentation" src="https://cdn.qwiklabs.com/IIEOvvtuXEXTRoUW4wuNrYMIQuzLnBWRuUYwzgdhtjI%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Your Personal Feedback Agent
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Your Personal Feedback Agent' label='Learn more' modal='public-profile-award-modal-31' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720954"><img role="presentation" src="https://cdn.qwiklabs.com/Kx%2B%2BpkDKzg9megCwXOn5MfkKj9MNDcouWnVoQwCX%2FdM%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Presentation Scripts with Gemini
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Presentation Scripts with Gemini' label='Learn more' modal='public-profile-award-modal-32' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720922"><img role="presentation" src="https://cdn.qwiklabs.com/Xn4Orf6MbJr9eljlnLQEzLq8gGtvfvyYRQgtwv7%2F%2Fkk%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Project Notebooks
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Project Notebooks' label='Learn more' modal='public-profile-award-modal-33' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720902"><img role="presentation" src="https://cdn.qwiklabs.com/nQ4b0CiXm7m2XUvzzaWKmx7659vihFPyTKWZAq44ubE%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: NotebookLM for Market Research
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: NotebookLM for Market Research' label='Learn more' modal='public-profile-award-modal-34' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720873"><img role="presentation" src="https://cdn.qwiklabs.com/OgEKKA6lK1kMMYWRVX0WJAMuteS44UB8IRD4SuamxJU%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: NotebookLM Video Overviews
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: NotebookLM Video Overviews' label='Learn more' modal='public-profile-award-modal-35' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720851"><img role="presentation" src="https://cdn.qwiklabs.com/lmE%2BtIwpWmqaKkFhz%2BmG1p2rcP8he2lN8lHU%2BmxGZ4M%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Discover Sources in NotebookLM
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Discover Sources in NotebookLM' label='Learn more' modal='public-profile-award-modal-36' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720826"><img role="presentation" src="https://cdn.qwiklabs.com/lY3dvoYQhE%2BDRnTHhHq0byo1Mv3NSNwSwcDyRC4zUUQ%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: NotebookLM Mind Maps
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: NotebookLM Mind Maps' label='Learn more' modal='public-profile-award-modal-37' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720814"><img role="presentation" src="https://cdn.qwiklabs.com/LfphJE4ffS8gMf1%2Favz7ZvrsZPwFZ1CjxSQEQ4LZR84%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Intro to NotebookLM
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Intro to NotebookLM' label='Learn more' modal='public-profile-award-modal-38' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720790"><img role="presentation" src="https://cdn.qwiklabs.com/hebgtvz8tlnaoha5CYFrSG1D08LS5WX1LAucQRHkdjQ%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Email Content Creation
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Email Content Creation' label='Learn more' modal='public-profile-award-modal-39' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720762"><img role="presentation" src="https://cdn.qwiklabs.com/m3RGonNoaiqg65yFpO6v1xPR8ovDrrnZNqWI0i1s9YQ%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Create Docs in Seconds
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Create Docs in Seconds' label='Learn more' modal='public-profile-award-modal-40' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720723"><img role="presentation" src="https://cdn.qwiklabs.com/ydX8SIVF3NS1pN246f9PtJjGf5EmnyrlnQMNYJ9X0zQ%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: AI Power-Ups for Google Workspace
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: AI Power-Ups for Google Workspace' label='Learn more' modal='public-profile-award-modal-41' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720665"><img role="presentation" src="https://cdn.qwiklabs.com/GovfqO0LLP29A0CGYWOopTjGbUmv2j3rv8dIqALv2J4%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Tame Your Inbox with AI
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Tame Your Inbox with AI' label='Learn more' modal='public-profile-award-modal-42' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720624"><img role="presentation" src="https://cdn.qwiklabs.com/tZobx%2FFQAl1nfDYMRhUg95mlYBI51n1Gfghld39%2FAp0%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Gemini Slide Summaries
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Gemini Slide Summaries' label='Learn more' modal='public-profile-award-modal-43' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720556"><img role="presentation" src="https://cdn.qwiklabs.com/1g0gpiB8XR0%2Ft0yObuq99ZvwqDzBTbpEEZtV0MRDzWw%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: No-Code Sheets &amp; Scripts
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: No-Code Sheets &amp; Scripts' label='Learn more' modal='public-profile-award-modal-44' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720524"><img role="presentation" src="https://cdn.qwiklabs.com/b5V%2FIhsctZ78FMGa3uYoqf8vjr63N9wzGzPoFwui25k%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Amplify Exec Voices with AI
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Amplify Exec Voices with AI' label='Learn more' modal='public-profile-award-modal-45' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720384"><img role="presentation" src="https://cdn.qwiklabs.com/3bxJs0CERuRoHFv4lUX7J5aPRv%2F58RluvEDcQDZHCWA%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Exec Summaries with Gemini Gems
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Exec Summaries with Gemini Gems' label='Learn more' modal='public-profile-award-modal-46' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720353"><img role="presentation" src="https://cdn.qwiklabs.com/ifSp1k5lkn1JqxI7fz1oGAxqrfoHzEKdGOmOLII%2FNd0%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Automate tasks with Gemini and Apps Script
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Automate tasks with Gemini and Apps Script' label='Learn more' modal='public-profile-award-modal-47' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720234"><img role="presentation" src="https://cdn.qwiklabs.com/zu4IlrPPX7ty%2B11bWNvvFGqAOiXbOmRbJsnREnkJhyg%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: &quot;Eat the Frog&quot; with NotebookLM
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: &quot;Eat the Frog&quot; with NotebookLM' label='Learn more' modal='public-profile-award-modal-48' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720195"><img role="presentation" src="https://cdn.qwiklabs.com/%2BrIpa83CQUzIpdsu0Dc5zXJiXx%2F%2BTKSi35dsTzzE2T4%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Gemini Image-to-Sheets Hack
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Gemini Image-to-Sheets Hack' label='Learn more' modal='public-profile-award-modal-49' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720173"><img role="presentation" src="https://cdn.qwiklabs.com/MR2VThssybuWq3Epa%2F0ZuVnpclfk4onY3igsHP28Azw%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Poke Holes in Your Strategy
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Poke Holes in Your Strategy' label='Learn more' modal='public-profile-award-modal-50' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720138"><img role="presentation" src="https://cdn.qwiklabs.com/lQEE5iqPEa%2BAIhmJmB769uyFwmwIoLvz0Bln5Fk5zvI%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: NotebookLM for Competitive Edge
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: NotebookLM for Competitive Edge' label='Learn more' modal='public-profile-award-modal-51' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720114"><img role="presentation" src="https://cdn.qwiklabs.com/ZwYG3SlROXHvUoDMKccD%2BlEMrAQJtDMpjUPoGa%2BjMI4%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Personalization with customized prompts
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Personalization with customized prompts' label='Learn more' modal='public-profile-award-modal-52' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720079"><img role="presentation" src="https://cdn.qwiklabs.com/5S5xEoPuikFEU0g0TBxTIrNB%2BM9olkl2ulABU4FVuHI%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: TL;DR with Gemini in Docs &amp; Drive
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: TL;DR with Gemini in Docs &amp; Drive' label='Learn more' modal='public-profile-award-modal-53' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23720047"><img role="presentation" src="https://cdn.qwiklabs.com/hsgoaIaNDljV9yZPQ6UPN67yG0FAtTJ4V7uERoiZDUY%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Prompting like a Pro with Google Workspace
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Prompting like a Pro with Google Workspace' label='Learn more' modal='public-profile-award-modal-54' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23719986"><img role="presentation" src="https://cdn.qwiklabs.com/9UrQECS5xwTQbTYNrh3RfL88dWAH0t33na6sbZj09eM%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Content Generation with Gemini Made Easy
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Content Generation with Gemini Made Easy' label='Learn more' modal='public-profile-award-modal-55' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23719915"><img role="presentation" src="https://cdn.qwiklabs.com/jTe812NsVw%2Bb5UyKo0JrVrNf%2FLNy0cLrnNZbz4ymjzg%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Customer insights with NotebookLM
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Customer insights with NotebookLM' label='Learn more' modal='public-profile-award-modal-56' outlined tip='Learn more'></ql-button>
+</div>
+
+<div class='profile-badge'>
+<a class="badge-image" href="https://www.skills.google/public_profiles/fd0f4879-c8f6-438a-9baa-e958d30ac1ec/badges/23719777"><img role="presentation" src="https://cdn.qwiklabs.com/WPXAhcv9U7hTrwB7bp86uMEyMViSQ0anOtY7xszxDkU%3D" />
+</a><span class='ql-title-medium l-mts'>
+AI Boost Bites: Gemini Gems – Your ultimate marketing sidekick
+</span>
+<span class='ql-body-medium l-mbs'>
+Earned Apr 21, 2026 EDT
+</span>
+<ql-button ariaLabel='Learn more about AI Boost Bites: Gemini Gems – Your ultimate marketing sidekick' label='Learn more' modal='public-profile-award-modal-57' outlined tip='Learn more'></ql-button>
+</div>
+
+</div>
+</div>
+
+</main>
+
+</ql-drawer-content>
+</ql-drawer-container>
+
+<span class='hidden' id='flash-sibling-before'></span>
+<ql-snackbar></ql-snackbar>
+
+<script data-glue-cookie-notification-bar-category='2A' src='https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.js'></script>
+
+
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Build an AI Support Bot' id='public-profile-award-modal-0'>
+<p>In this video, you'll learn to build a first-line-of-defense AI for support operations. Master the art of uploading diverse sources, setting secure "Chat only" permissions, and customizing the AI to help your team diagnose issues in a fraction of the time.</p>
+<ql-button href='/course_templates/1612' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Advanced Analysis in Sheets' id='public-profile-award-modal-1'>
+<p>In this video, you'll learn to use Gemini in Google Sheets for advanced data analysis. You'll learn how to create data visualizations, like a scatter plot, using a simple prompt. You'll also learn how to ask Gemini to analyze your data for strategic insights and recommendations, such as how to save money.</p>
+<ql-button href='/course_templates/1479' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Notes to Sheets with Gemini' id='public-profile-award-modal-2'>
+<p>In this video, you'll learn to use Gemini in Google Sheets to automatically generate organized trackers from unstructured data. You'll learn how to write a prompt that references other Google Drive files using the "@" symbol. You'll also see how Gemini builds a fully formatted, color-coded table with drop-down menus based on the data in your notes, saving you significant manual effort.</p>
+<ql-button href='/course_templates/1489' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Gemini Calendar Hacks in Gmail' id='public-profile-award-modal-3'>
+<p>In this video, you'll learn to use Gemini in Google Workspace to manage your calendar from your Gmail inbox. You'll learn how to ask Gemini about your schedule in the side panel and how to create new events without switching apps. You'll also learn how to use Gemini's one-click scheduling feature when it automatically detects event details in an email.</p>
+<ql-button href='/course_templates/1495' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Build Slides Fast with Gemini' id='public-profile-award-modal-4'>
+<p>In this video, you'll learn to use Gemini in Google Slides to build polished presentations efficiently. You'll see how to create slides by referencing content directly from your Google Drive files using the "@" symbol. You'll also learn to generate custom, professional images from a simple text prompt to visually enhance your presentation.</p>
+<ql-button href='/course_templates/1499' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Talk to Your Data in Sheets' id='public-profile-award-modal-5'>
+<p>In this video, you'll learn to use the "Ask Gemini" feature in Google Sheets to manage your data with natural language. You'll see how to ask Gemini to create dropdowns, highlight sales data, create a pivot table, filter by month, and sort by revenue.</p>
+<ql-button href='/course_templates/1484' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: AI Magic in a Sheets Cell' id='public-profile-award-modal-6'>
+<p>In this video, you'll learn to use the =AI() function in Google Sheets to automate your work. You'll see how to generate text like slogans, summarize paragraphs of customer feedback, and categorize data by classifying inquiries and analyzing sentiment.</p>
+<ql-button href='/course_templates/1487' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Create ‘What If’ Scenarios with AI' id='public-profile-award-modal-7'>
+<p>In this video, you'll learn to create "what if" scenarios using AI's reasoning. You'll see how to set a "before" scene with a person holding a cake, prompt an action by asking "what would happen if they tripped?", and let the AI generate the plausible "after" image of the cake falling.</p>
+<ql-button href='/course_templates/1470' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Become a Creative Mashup Artist' id='public-profile-award-modal-8'>
+<p>In this video, you'll learn the "creative mashup artist" technique for combining images. You'll see how to generate a subject and a scene as two separate images, and then use a final blending prompt to fuse the astronaut from the first image and the court from the second into one new picture.</p>
+<ql-button href='/course_templates/1492' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Become an AI Art Director for Your World' id='public-profile-award-modal-9'>
+<p>In this video, you'll learn to art direct your images in the Gemini app. You'll see how to use multi-turn editing to furnish an empty room step-by-step, and how to "remix" a photo by applying the color and texture of a butterfly's wings to a pair of rainboots.</p>
+<ql-button href='/course_templates/1474' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Create the Perfect Portrait' id='public-profile-award-modal-10'>
+<p>In this video, you'll learn to create imaginative portraits in the Gemini app that maintain your likeness. You'll see how to use the "Subject, Action, Scene, Style" formula for better prompts, transport yourself into a vintage photo, and combine a photo of yourself and your dog into one new image.</p>
+<ql-button href='/course_templates/1491' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Research Hacks with NotebookLM' id='public-profile-award-modal-11'>
+<p>In this video, you'll learn to use NotebookLM to manage a large-scale research project. You'll see how to upload all your documents to get summaries, ask deeper strategic questions to find key insights, and use the audio feature to listen to your findings on the go.</p>
+<ql-button href='/course_templates/1483' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Find the Story in Your Data' id='public-profile-award-modal-12'>
+<p>In this video, you'll learn to use NotebookLM to analyze raw data and find compelling stories. You'll see how to ground the AI in your specific documents, prompt it to generate newsworthy PR claims, and ask it to find hidden correlations between different data points to uncover new insights.</p>
+<ql-button href='/course_templates/1469' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Streamline Event Planning with AI' id='public-profile-award-modal-13'>
+<p>In this video, you'll learn to use an AI assistant to streamline large-scale event planning. You'll see how to prompt an AI to brainstorm off-site ideas, create fair groups for icebreakers, build a shuttle schedule based on arrival times, and analyze survey feedback for gains and losses.</p>
+<ql-button href='/course_templates/1490' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Supercharge Research with Gemini' id='public-profile-award-modal-14'>
+<p>In this video, you'll learn pro tips for conducting thorough competitive research with Gemini Deep Research. You'll see how to enhance a basic prompt by assigning a persona, specifying a table format for the output, and directing the AI to search specific sources like Reddit for richer insights.</p>
+<ql-button href='/course_templates/1498' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Make Any Big Purchase with Confidence' id='public-profile-award-modal-15'>
+<p>In this video, you'll learn to use Gemini Deep Research to make complex purchasing decisions with confidence. You'll see how to write a nuanced, personal prompt about your specific needs and receive a synthesized, comparative report that cuts through the clutter of online reviews.</p>
+<ql-button href='/course_templates/1477' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Animated Charts with Gemini' id='public-profile-award-modal-16'>
+<p>In this video, you'll learn to create an animated bar chart race using Gemini Canvas. You'll see how to write a prompt to visualize data over time and then use a follow-up prompt to refine the animation, such as slowing it down for a presentation.</p>
+<ql-button href='/course_templates/1473' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Turn Your Ideas into Animated Art' id='public-profile-award-modal-17'>
+<p>In this video, you'll learn to create complex animated art using Gemini Canvas. You'll see how to write a descriptive prompt to generate a kinetic typography animation with distortion effects, and then use a follow-up prompt to completely change its color style.</p>
+<ql-button href='/course_templates/1486' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Your Personal AI Tutor' id='public-profile-award-modal-18'>
+<p>In this video, you'll learn to build a reusable, custom "Study Guide Gem." You'll see how to write the core instructions for your Gem once, and then use it again and again to transform messy notes and articles into a perfectly structured study guide with a summary, outline, and glossary.</p>
+<ql-button href='/course_templates/1482' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Gamify Your Study Guides' id='public-profile-award-modal-19'>
+<p>In this video, you'll learn to turn your study guides into interactive quizzes using Gemini Canvas. You'll see how to upload your notes and use a simple prompt to generate a quiz with multiple choice and fill-in-the-blank questions that provide immediate feedback.</p>
+<ql-button href='/course_templates/1468' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Get Your Competitor&#39;s Playbook in Minutes' id='public-profile-award-modal-20'>
+<p>In this video, you'll learn to use Gemini Deep Research to conduct competitive marketing analysis. You'll see how to submit a research prompt, approve the personalized research plan Gemini creates, and receive a detailed, synthesized report on competitor campaigns to inform your strategy.</p>
+<ql-button href='/course_templates/1494' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Build a Personalized Weather App' id='public-profile-award-modal-21'>
+<p>In this video, you'll learn to build a working prototype of a personalized weather app using Gemini Canvas. You'll see how to specify the cities for a 7-day forecast and then use a follow-up prompt to change the app's theme to a minimal, dark mode interface.</p>
+<ql-button href='/course_templates/1472' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Create a 3D Solar System' id='public-profile-award-modal-22'>
+<p>In this video, you'll learn to create an interactive 3D simulation using Gemini Canvas. You'll see how to build a 3D model of the solar system from a single sentence and then use follow-up prompts to add interactive and educational features, like clickable planets and fun facts.
+</p>
+<ql-button href='/course_templates/1488' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Create Your Own Productivity Tools' id='public-profile-award-modal-23'>
+<p>In this video, you'll learn to build a custom personal utility app using Gemini Canvas. You'll see how to write a detailed prompt to create a Pomodoro timer tailored to your specific needs, and then use follow-up prompts to adjust its visual design.</p>
+<ql-button href='/course_templates/1476' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Guided Learning with Gemini' id='public-profile-award-modal-24'>
+<p>In this video, you'll learn to use the Guided Learning experience in Gemini to build a deep understanding of any topic. You'll see how to start a conversation, engage with Gemini's probing questions, and use interactive tools like diagrams and quizzes to guide your learning journey.</p>
+<ql-button href='/course_templates/1481' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Create Your Own Retro Arcade Game' id='public-profile-award-modal-25'>
+<p>In this video, you'll learn to use a simple text prompt in Gemini Canvas to build a playable game. You'll see how to create a Tic-Tac-Toe game, use a follow-up prompt to customize its theme to a retro 8-bit style, and share the final game with a link.</p>
+<ql-button href='/course_templates/1467' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Become a &quot;Vibe DJ&quot;' id='public-profile-award-modal-26'>
+<p>In this video, you'll learn to build a working music synthesizer using a simple text prompt in Gemini Canvas. You'll see how to specify controls like waveform, attack, and sustain, and then interact with the generated instrument to create and experiment with your own unique sounds.</p>
+<ql-button href='/course_templates/1493' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Create Your Ultimate College Scouting Report' id='public-profile-award-modal-27'>
+<p>In this video, you'll learn to use creative prompts in Gemini to make complex research fun and easy to understand. You'll see how to ask Gemini to research a topic and present the findings in a creative format, like a sports scouting report and a head-to-head bracket, to better visualize and compare your options.</p>
+<ql-button href='/course_templates/1471' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: One-Click Campaign Visuals' id='public-profile-award-modal-28'>
+<p>In this video, you'll learn to use the Create menu in Gemini Canvas to instantly convert a block of text into a variety of visual formats. You’ll see how to take a brainstormed marketing campaign and turn it into both a shareable infographic and an internal webpage with just one click.</p>
+<ql-button href='/course_templates/1485' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: From Napkin Sketch to Functional App' id='public-profile-award-modal-29'>
+<p>In this video, you'll learn to use Gemini Canvas to turn a simple drawing into a working app. You'll upload a sketch, use a simple prompt to generate code, watch a live preview build itself, and make iterative changes to your app prototype using natural language.</p>
+<ql-button href='/course_templates/1480' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: NotebookLM Reports ' id='public-profile-award-modal-30'>
+<p>This video covers how NotebookLM's Reports feature dynamically suggests formats to help you create customized, trustworthy analyses of your documents with ease.</p>
+<ql-button href='/course_templates/1466' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Your Personal Feedback Agent' id='public-profile-award-modal-31'>
+<p>This video covers how to build a personalized "Work with Me" agent using Gemini Gems, which helps streamline foundational feedback and makes your meetings more strategic and efficient.</p>
+<ql-button href='/course_templates/1449' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Presentation Scripts with Gemini' id='public-profile-award-modal-32'>
+<p>AI Boost Bites is a video series designed to help you leverage Google's AI tools in your daily work. Each episode, under 10 minutes, features a quick video demonstrating a real-world AI use case or topic. After the video, you'll get a challenge to apply what you've learned. It's an easy, interactive way to boost your AI skills and improve your productivity.</p>
+<ql-button href='/course_templates/1433' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Project Notebooks' id='public-profile-award-modal-33'>
+<p>This video covers how to create a 'project notebook' in NotebookLM by adding all relevant sources to build a central, searchable knowledge hub for your team.</p>
+<ql-button href='/course_templates/1417' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: NotebookLM for Market Research' id='public-profile-award-modal-34'>
+<p>This video covers how to use NotebookLM for common marketing tasks like
+    analyzing customer feedback, conducting market research, and generating
+    content ideas.</p>
+<ql-button href='/course_templates/1422' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: NotebookLM Video Overviews' id='public-profile-award-modal-35'>
+<p> This video covers how to use the Video Overviews feature in NotebookLM to automatically generate a short explainer video based on your source documents.</p>
+<ql-button href='/course_templates/1420' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Discover Sources in NotebookLM' id='public-profile-award-modal-36'>
+<p>This video covers how to use the 'Discover Sources' feature in NotebookLM to find and import relevant web-based sources directly into your research project.</p>
+<ql-button href='/course_templates/1424' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: NotebookLM Mind Maps' id='public-profile-award-modal-37'>
+<p>This video covers how to use the Mind Maps feature in NotebookLM to automatically create a visual representation of your sources, helping you understand connections and key concepts.</p>
+<ql-button href='/course_templates/1415' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Intro to NotebookLM' id='public-profile-award-modal-38'>
+<p>This video covers how to use NotebookLM as a personal research
+    assistant by adding sources, asking questions, and generating new content
+    formats based on your documents.</p>
+<ql-button href='/course_templates/1418' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Email Content Creation' id='public-profile-award-modal-39'>
+<p>This video covers how to use Gemini in Gmail to draft new emails,
+    refine their tone, respond with context from Drive files, and use smart
+    reply suggestions.</p>
+<ql-button href='/course_templates/1421' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Create Docs in Seconds' id='public-profile-award-modal-40'>
+<p> This video covers how to use the 'Help me create' feature in Google Docs to generate a complete, formatted document by referencing content from other files in your Drive. </p>
+<ql-button href='/course_templates/1419' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: AI Power-Ups for Google Workspace' id='public-profile-award-modal-41'>
+<p>This video covers five key ways to use Google's AI tools, including Gemini in Workspace, the Gemini app, and NotebookLM, to enhance your daily productivity.</p>
+<ql-button href='/course_templates/1423' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Tame Your Inbox with AI' id='public-profile-award-modal-42'>
+<p>This video covers how to use Gemini in Gmail to summarize emails, find information, and draft replies, helping you manage your inbox more efficiently.</p>
+<ql-button href='/course_templates/1416' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Gemini Slide Summaries' id='public-profile-award-modal-43'>
+<p>This video covers how to use Gemini in Slides to automatically generate
+    meeting recaps and draft follow-up emails, which can streamline your
+    post-meeting workflow and save you time.</p>
+<ql-button href='/course_templates/1367' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: No-Code Sheets &amp;amp; Scripts' id='public-profile-award-modal-44'>
+<p>This video covers how you can leverage Gemini's advanced AI capabilities within Google Sheets to effortlessly pull data and generate insights in minutes, all without the need for any technical or coding background.</p>
+<ql-button href='/course_templates/1351' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Amplify Exec Voices with AI' id='public-profile-award-modal-45'>
+<p>This video will cover how to leverage Gemini Gems to create authentic
+    social media posts in your leader's unique voice. Learn to overcome the
+    challenge of scaling executive social presence by training a Gem with
+    writing samples and clear instructions. Discover how to generate engaging
+    posts quickly, saving time while amplifying thought leadership and
+    ensuring authenticity.</p>
+<ql-button href='/course_templates/1350' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Exec Summaries with Gemini Gems' id='public-profile-award-modal-46'>
+<p> This video covers how you can create your own Brevity Gem to summarize and transform messy notes or long documents into clear, concise, executive-ready summaries. </p>
+<ql-button href='/course_templates/1355' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Automate tasks with Gemini and Apps Script' id='public-profile-award-modal-47'>
+<p>This video covers how to use Gemini and Apps Script to automate manual tasks across Google Workspace. You'll learn to prompt Gemini to generate Apps Script code that automatically drafts email reminders in Google Sheets for tasks not marked 'Complete.' Automate your workflow with little to no technical expertise, freeing up time for more important work and eliminating manual follow-ups.</p>
+<ql-button href='/course_templates/1371' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: &quot;Eat the Frog&quot; with NotebookLM' id='public-profile-award-modal-48'>
+<p>This video covers how you can leverage Notebook LM to "eat the frog" on your to-do list by automating complex tasks like summarizing legislation and mapping services, saving you hours of work.</p>
+<ql-button href='/course_templates/1354' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Gemini Image-to-Sheets Hack' id='public-profile-award-modal-49'>
+<p>This video covers how to eliminate tedious manual data entry using Gemini. Learn how to take a picture or screenshot of data (from PDFs, paper, or images) and prompt Gemini to instantly convert it into a structured Google Sheet. Discover this simple hack to save countless hours transcribing data, turning Gemini into your personal data entry assistant. Just snap, prompt, and export!</p>
+<ql-button href='/course_templates/1353' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Poke Holes in Your Strategy' id='public-profile-award-modal-50'>
+<p>AI Boost Bites is a video series designed to help you leverage Google's AI tools in your daily work. Each episode, under 10 minutes, features a quick video demonstrating a real-world AI use case or topic. After the video, you'll get a challenge to apply what you've learned. It's an easy, interactive way to boost your AI skills and improve your productivity.</p>
+<ql-button href='/course_templates/1363' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: NotebookLM for Competitive Edge' id='public-profile-award-modal-51'>
+<p>This video will cover how to use NotebookLM to gather and analyze
+    publicly available information, combine it with internal documents, and
+    extract key competitive insights.</p>
+<ql-button href='/course_templates/1352' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Personalization with customized prompts' id='public-profile-award-modal-52'>
+<p>This video covers how to personalize your Gemini results in Google
+    Workspace. Learn to incorporate documents and research papers directly
+    into your prompts using the "@" symbol to get more targeted and relevant
+    AI output tailored to your needs.</p>
+<ql-button href='/course_templates/1366' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: TL;DR with Gemini in Docs &amp;amp; Drive' id='public-profile-award-modal-53'>
+<p> This video covers how you can use Gemini to summarize long documents in Google Workspace, so you can quickly get the information you need and save time. You'll learn how to use Gemini to summarize entire documents or just selected text, as well as how to use Gemini in Drive to summarize across multiple files. </p>
+<ql-button href='/course_templates/1357' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Prompting like a Pro with Google Workspace' id='public-profile-award-modal-54'>
+<p> This video covers prompt engineering fundamentals for effective AI communication. Learn a simple framework (Persona, Task, Context, Format) to craft clear prompts, getting better, faster results from Gemini in Google Workspace. Discover how to use natural language, be specific, and iterate for optimal AI assistance. </p>
+<ql-button href='/course_templates/1365' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Content Generation with Gemini Made Easy' id='public-profile-award-modal-55'>
+<p>This video will cover how you can leverage Gemini's advanced AI capabilities in Google Docs to brainstorm ideas, draft various marketing content, and collaborate with your team.</p>
+<ql-button href='/course_templates/1369' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Customer insights with NotebookLM' id='public-profile-award-modal-56'>
+<p>This video covers how NotebookLM can revolutionize customer insight gathering from call or chat transcripts. You'll learn to upload PDF transcripts of hundreds of conversations (even multilingual ones!) and quickly extract key themes, trending topics, and actionable insights without listening for hours. Discover how to save findings, share notebooks, and even generate interactive podcast summaries of your data.</p>
+<ql-button href='/course_templates/1356' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+<ql-dialog dismissalLabel='Dismiss' headline='AI Boost Bites: Gemini Gems – Your ultimate marketing sidekick' id='public-profile-award-modal-57'>
+<p>This video covers how to create your own Gemini Gems, advanced AI capabilities that can automate repetitive tasks and supercharge your productivity.</p>
+<ql-button href='/course_templates/1349' label='Learn more' method='get' slot='action' text>
+Learn more
+</ql-button>
+</ql-dialog>
+
+
+
+<script>
+  document.addEventListener("turbo:load", function () {
+    ql.initMaterialInputs();
+    initChosen();
+    initTabs();
+    ql.list.init();
+    ql.favoriting.init();
+    ql.header.myAccount.init();
+    initTooltips();
+    ql.autocomplete.init();
+    ql.modals.init();
+    ql.toggleButtons.init();
+    Turbo.session.drive = false;
+    ql.messages.init();
+  ql.jumpContent.init();
+  
+  }, {once: true});
+</script>
+<script>
+  document.addEventListener("turbo:load", () => ql.analytics.init());
+  document.addEventListener("turbo:frame-load", () => ql.analytics.init());
+</script>
+<script>
+  document.addEventListener("turbo:load", function () {
+    ql.celebrations.init({"course_complete":"COURSE COMPLETED","document_complete":"DOCUMENT COMPLETED","experience_label":"Experience points","lab_complete":"LAB COMPLETED","learning_plan_complete":"PATH COMPLETED","lesson_complete":"LESSON COMPLETED","quiz_complete":"QUIZ COMPLETED","video_complete":"VIDEO COMPLETED"});
+    ql.achievements.init();
+  }, {once: true});
+</script>
+
+</body>
+</html>
+
+
