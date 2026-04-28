@@ -127,11 +127,11 @@ export const ACHIEVEMENTS_DATA = {
   achievements: [
     {
       num: '01',
-      title: "Giải nhì Nghiên cứu Khoa học cấp Khoa",
+      title: "Giải nhì Nghiên cứu Khoa học Sinh viên",
       issuer: "HCMUE - Faculty of Information Technology",
       date: "2024",
-      desc: "Đạt giải nhì trong cuộc thi nghiên cứu khoa học sinh viên cấp khoa với đề tài về ứng dụng Trí tuệ nhân tạo và Phân tích dữ liệu.",
-      image: null, // Placeholder for user to add later
+      desc: "Đề tài: Sử dụng Google Apps Script thiết kế bài kiểm tra tự động",
+      image: "/award-01.jpg",
       icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
     }
   ],

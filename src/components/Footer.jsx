@@ -18,7 +18,7 @@ export default function Footer() {
             </div>
             <span className="text-xs text-white/40">{copyright}</span>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="hidden md:flex items-center gap-5">
             {links.map((link) => (
               <a
                 key={link.href}
