@@ -16,7 +16,7 @@ export default function Navbar() {
 
   // Initialize audio element
   useEffect(() => {
-    const audio = new Audio('/bg-music.mp3');
+    const audio = new Audio(`${import.meta.env.BASE_URL}bg-music.mp3`);
     audio.loop = true;
     audio.volume = 0.5;
     audio.preload = 'auto';
